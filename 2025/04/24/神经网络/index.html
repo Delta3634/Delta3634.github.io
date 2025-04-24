@@ -7,10 +7,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <!--添加MathJax库、数学渲染-->
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+  
 
 
 
@@ -145,6 +142,21 @@
 
 
   
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
