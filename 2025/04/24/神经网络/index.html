@@ -19,58 +19,57 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="（一）机器学习要素   训练集上表现良好，新样本集上表现较差：泛化能力差  一、分类 1.监督学习： 多个含有输入x和标签y的样本对组成，机器通过样本来学习正确答案    训练时，输入$x$送入映射函数$f(x)$，得到输出$y尖$，用正确答案**标签$y$**来监督$y尖$的偏差，从而修正函数，得到更准确的输出$y尖$;   监督学习的目标：构建从$输入x到输出y$之间的映射关系 解决的两种问题">
+    <meta name="description" content="（一）机器学习要素   训练集上表现良好，新样本集上表现较差：泛化能力差  一、分类  1.监督学习： 多个含有输入x和标签y的样本对组成，机器通过样本来学习正确答案     训练时，输入$x$送入映射函数$f(x)$，得到输出$y尖$，用正确答案**标签$y$**来监督$y尖$的偏差，从而修正函数，得到更准确的输出$y尖$;    监督学习的目标：构建从$输入x到输出y$之间的映射关系 解决的两">
 <meta property="og:type" content="article">
 <meta property="og:title" content="神经网络">
 <meta property="og:url" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/index.html">
 <meta property="og:site_name" content="Delta">
-<meta property="og:description" content="（一）机器学习要素   训练集上表现良好，新样本集上表现较差：泛化能力差  一、分类 1.监督学习： 多个含有输入x和标签y的样本对组成，机器通过样本来学习正确答案    训练时，输入$x$送入映射函数$f(x)$，得到输出$y尖$，用正确答案**标签$y$**来监督$y尖$的偏差，从而修正函数，得到更准确的输出$y尖$;   监督学习的目标：构建从$输入x到输出y$之间的映射关系 解决的两种问题">
+<meta property="og:description" content="（一）机器学习要素   训练集上表现良好，新样本集上表现较差：泛化能力差  一、分类  1.监督学习： 多个含有输入x和标签y的样本对组成，机器通过样本来学习正确答案     训练时，输入$x$送入映射函数$f(x)$，得到输出$y尖$，用正确答案**标签$y$**来监督$y尖$的偏差，从而修正函数，得到更准确的输出$y尖$;    监督学习的目标：构建从$输入x到输出y$之间的映射关系 解决的两">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%871_%E5%9B%9B%E5%A4%A7%E8%A6%81%E7%B4%A0.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328104827082.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105011992.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105311512.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105728179.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105755371.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328110156650.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328175916991.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328180017985.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328181331939.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328181847440.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328180513463.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328110439034.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328111019171.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328111103662.png">
-<meta property="og:image" content="d:\myblog\source_posts\%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C\%E5%9B%BE%E7%89%8716.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250327171702302.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328185508443.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328190702976.png">
-<meta property="og:image" content="d:\myblog\source_posts\%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C\%E5%9B%BE%E7%89%8720_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328192346202.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328192516883.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328193246418.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328193825157.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328194241644.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328202123576.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328202941754.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328203053867.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328204326907.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328204705123.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328233418462.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328220623168.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328220553441.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328221140188.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328221251840.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328222911604.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328224302054.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328232754161.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328233138542.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250329101825469.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%872_%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%88%86%E7%B1%BB.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%873_%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%874.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%875_%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%876_%E5%8D%8A%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%877_%E4%B8%80%E4%B8%AA%E6%9E%84%E5%BB%BA%E5%87%BA%E6%9D%A5%E7%9A%84%E6%A8%A1%E5%9E%8B%E4%BE%8B%E5%AD%90.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%878.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%879_%E8%B6%85%E5%8F%82%E6%95%B0%E6%B6%89%E5%8F%8A%E7%9A%84%E9%97%AE%E9%A2%98.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8710_%E4%B8%8D%E6%96%AD%E8%B0%83%E6%95%B4%E7%9B%B4%E5%88%B0%E6%89%BE%E5%88%B0%E8%B6%85%E5%8F%82%E6%95%B0%E7%9A%84%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8711_%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8712_%E5%B8%B8%E8%A7%84%E6%83%85%E5%86%B5%E4%B8%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%92%E5%88%86%E6%83%85%E5%86%B5.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8713_%E4%BD%BF%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%BE%97%E5%88%B0%E7%9A%84%E5%80%BC%E6%9C%80%E5%B0%8F%E5%8C%96.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8714_%E5%87%B8%E5%87%BD%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8715_%E9%9D%9E%E5%87%B8%E5%87%BD%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8717_Sigmoid%E5%87%BD%E6%95%B0%E6%9B%B2%E7%BA%BF.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8718_%E6%B5%85%E5%B1%82%E6%A8%A1%E5%9E%8B.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8719_%E5%89%8D%E5%90%91%E4%BC%A0%E6%92%AD.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8720_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8721_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E5%88%B0w11%E7%9A%84%E6%83%85%E5%86%B5.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8722_%E6%B1%82%E5%81%8F%E5%AF%BC%E7%9A%84%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8723_Sigmoid%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%BC%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8724_tahn%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%BC%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8725_Relu%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%BC%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8726_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E6%97%B6%E5%8F%97%E5%BD%B1%E5%93%8D%E7%9A%84%E5%8E%9F%E5%9B%A0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8727_Leaky_ReLU%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8728.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8729_ELU%E5%87%BD%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8730_Swish%E5%87%BD%E6%95%B0.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8731_%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8732.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8733.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8734.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8735.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8736_%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%8D%B7%E7%A7%AF%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8737.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8738_%E4%B8%89%E9%80%9A%E9%81%93%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8739_%E5%8D%B7%E7%A7%AF%E5%B1%82.png">
+<meta property="og:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8740.png">
 <meta property="article:published_time" content="2025-04-24T10:09:23.000Z">
-<meta property="article:modified_time" content="2025-04-24T13:28:44.485Z">
+<meta property="article:modified_time" content="2025-04-24T15:21:34.033Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Markdown">
 <meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%871_%E5%9B%9B%E5%A4%A7%E8%A6%81%E7%B4%A0.png">
   
@@ -345,15 +344,18 @@
 <ul>
 <li>训练集上表现良好，新样本集上表现较差：<strong>泛化能力差</strong></li>
 </ul>
-<h2 id="一、分类"><a href="#一、分类" class="headerlink" title="一、分类"></a>一、分类</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328104827082.png" srcset="/img/loading.gif" lazyload alt="机器学习的分类"></p>
+<h2 id="一、分类"><a href="#一、分类" class="headerlink" title="一、分类"></a>一、分类</h2><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%872_%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%88%86%E7%B1%BB.png" srcset="/img/loading.gif" lazyload class="">
+
 <h3 id="1-监督学习："><a href="#1-监督学习：" class="headerlink" title="1.监督学习："></a>1.监督学习：</h3><ul>
 <li><strong>多个含有输入x和标签y的样本对组成</strong>，机器通过样本来学习正确答案</li>
 </ul>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105011992.png" srcset="/img/loading.gif" lazyload alt="监督学习的过程"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%873_%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%BF%87%E7%A8%8B.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li>训练时，输入$x$送入映射函数$f(x)$，得到输出$y尖$，用正确答案**标签$y$**来监督$y尖$的偏差，从而修正函数，得到更准确的输出$y尖$;</li>
 </ul>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105311512.png" srcset="/img/loading.gif" lazyload alt="image-20250328105311512"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%874.png" srcset="/img/loading.gif" lazyload class="">
+
 <h4 id="监督学习的目标："><a href="#监督学习的目标：" class="headerlink" title="监督学习的目标："></a>监督学习的目标：</h4><p>构建从$输入x到输出y$之间的映射关系</p>
 <h4 id="解决的两种问题：分类-回归"><a href="#解决的两种问题：分类-回归" class="headerlink" title="解决的两种问题：分类&amp;回归"></a>解决的两种问题：分类&amp;回归</h4><ul>
 <li><strong>分类</strong>：对样本进行区分（根据标签——机器只能识别数字，所以将标签对应到具体的数字上），输出内容为<strong>离散值</strong></li>
@@ -361,10 +363,10 @@
 </ul>
 <h3 id="2-无监督学习："><a href="#2-无监督学习：" class="headerlink" title="2.无监督学习："></a>2.无监督学习：</h3><ul>
 <li><p>训练集只有$输入x$而没有$标签y$——没有正确答案来监督输出</p>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105728179.png" srcset="/img/loading.gif" lazyload alt="无监督学习" style="zoom:50%;" /></li>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%875_%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0.png" srcset="/img/loading.gif" lazyload class=""></li>
 </ul>
 <h4 id="无监督学习常见的任务"><a href="#无监督学习常见的任务" class="headerlink" title="无监督学习常见的任务"></a>无监督学习常见的任务</h4><p><strong>聚类</strong>，自行挖掘出数据的内在结构，讲给定的数据分成不同的类别</p>
-<h3 id="3-半监督学习"><a href="#3-半监督学习" class="headerlink" title="3.半监督学习"></a>3.半监督学习</h3><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328105755371.png" srcset="/img/loading.gif" lazyload alt="半监督学习" style="zoom: 50%;" />
+<h3 id="3-半监督学习"><a href="#3-半监督学习" class="headerlink" title="3.半监督学习"></a>3.半监督学习</h3><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%876_%E5%8D%8A%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>使用场景：<strong>标签数据比较昂贵，或有稳定数据流</strong>；</p>
 <p>例如：检测社交网络的违规信息（手动标注部分数据，用半监督技术来修正对位标注数据的理解）；</p>
@@ -378,26 +380,26 @@
 <li>可以理解为是一个函数</li>
 <li><strong>本质</strong>：算法＋参数的组合</li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328110156650.png" srcset="/img/loading.gif" lazyload alt="一个构建出来的模型例子" style="zoom:50%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%877_%E4%B8%80%E4%B8%AA%E6%9E%84%E5%BB%BA%E5%87%BA%E6%9D%A5%E7%9A%84%E6%A8%A1%E5%9E%8B%E4%BE%8B%E5%AD%90.png" srcset="/img/loading.gif" lazyload class="">
+
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%878.png" srcset="/img/loading.gif" lazyload class="">
 
 <ul>
-<li><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328175916991.png" srcset="/img/loading.gif" lazyload alt="image-20250328175916991" style="zoom:25%;" /></li>
 <li><strong>超参数</strong>：训练模型前，还需要设定其他的参数</li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328180017985.png" srcset="/img/loading.gif" lazyload alt="超参数的涉及问题" style="zoom: 33%;" />
-
-
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%879_%E8%B6%85%E5%8F%82%E6%95%B0%E6%B6%89%E5%8F%8A%E7%9A%84%E9%97%AE%E9%A2%98.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>————很难用解析解&#x2F;梯度下降等传统方式获得，一般只能不断试错得到（但上面的a,b也属于超参数）</p>
 <p><strong>测试集和训练集要严格分开，所以先将测试集固定下来</strong>，之后再讲剩下的数据划分为训练集和验证集，<strong>训练集用来训练模型，验证集用来评估模型，不断地调整超参数以找到最终的&#x3D;&#x3D;最优超参数&#x3D;&#x3D;</strong></p>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328181331939.png" srcset="/img/loading.gif" lazyload alt="不断调整直到找到最优超参数的过程" style="zoom: 67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8710_%E4%B8%8D%E6%96%AD%E8%B0%83%E6%95%B4%E7%9B%B4%E5%88%B0%E6%89%BE%E5%88%B0%E8%B6%85%E5%8F%82%E6%95%B0%E7%9A%84%E8%BF%87%E7%A8%8B.png" srcset="/img/loading.gif" lazyload class="">
 
 <p><strong>数据集足够时</strong>，我们采取上述调参流程，不断调整，最终使得<strong>模型评估值最高</strong>的超参数值即为我们要找的<strong>最优超参数</strong>；</p>
 <p><strong>数据值不足一万时</strong>，采用<strong>交叉验证</strong>（——》<strong>训练集与验证集</strong>之间的数据相互转换《——）</p>
 <ul>
 <li><strong>K折交叉验证</strong>——将训练集分为K份的交叉验证方式</li>
 </ul>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328181847440.png" srcset="/img/loading.gif" lazyload alt="交叉验证"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8711_%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>此时在<strong>均值曲线</strong>上，使得模型评估值最大的超参数值即为最优超参数值</p>
 <p>出现多个超参数时，采用的就是一个超参数组合</p>
 <ul>
@@ -406,7 +408,7 @@
 <li><p><strong>常规的数据集划分比例</strong>：</p>
 </li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328180513463.png" srcset="/img/loading.gif" lazyload alt="常规情况下的划分情况" style="zoom:67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8712_%E5%B8%B8%E8%A7%84%E6%83%85%E5%86%B5%E4%B8%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%92%E5%88%86%E6%83%85%E5%86%B5.png" srcset="/img/loading.gif" lazyload class="">
 
 
 
@@ -421,7 +423,7 @@
 <h2 id="四、损失函数——得到的值无正负之分"><a href="#四、损失函数——得到的值无正负之分" class="headerlink" title="四、损失函数——得到的值无正负之分"></a>四、损失函数——得到的值无正负之分</h2><ul>
 <li><strong>量化模型预测值与标签真实值之间的差异</strong>，帮助筛选出更好的模型</li>
 </ul>
-<h2 id="五、最终转化成最优化问题"><a href="#五、最终转化成最优化问题" class="headerlink" title="五、最终转化成最优化问题"></a>五、最终转化成最优化问题</h2><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328110439034.png" srcset="/img/loading.gif" lazyload alt="使损失函数得到的值最小化" style="zoom:50%;" />
+<h2 id="五、最终转化成最优化问题"><a href="#五、最终转化成最优化问题" class="headerlink" title="五、最终转化成最优化问题"></a>五、最终转化成最优化问题</h2><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8713_%E4%BD%BF%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%BE%97%E5%88%B0%E7%9A%84%E5%80%BC%E6%9C%80%E5%B0%8F%E5%8C%96.png" srcset="/img/loading.gif" lazyload class="">
 
 <ul>
 <li><p>目标：找到一组$\theta$，使$样本x到映射值y尖$之间的偏差最小</p>
@@ -429,14 +431,13 @@
 <li><p>最优化问题中有两种函数：</p>
 <ul>
 <li><p><strong>凸函数</strong>：任意两点连线组成的线段都在这两点的函数曲线（曲面）的同一方向——<strong>凸函数只有一个全局最优解</strong></p>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328111019171.png" srcset="/img/loading.gif" lazyload alt="凸函数" style="zoom: 50%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8714_%E5%87%B8%E5%87%BD%E6%95%B0.png" srcset="/img/loading.gif" lazyload class="">
 
 <p><strong>求导找到最值点则可找到全局最优解</strong></p>
 <p><strong>沿着梯度下降的方向更新参数，寻找最优解</strong></p>
 </li>
 <li><p><strong>非凸函数</strong>：</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328111103662.png" srcset="/img/loading.gif" lazyload alt="非凸函数"></p>
-</li>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8715_%E9%9D%9E%E5%87%B8%E5%87%BD%E6%95%B0.png" srcset="/img/loading.gif" lazyload class=""></li>
 </ul>
 </li>
 </ul>
@@ -464,10 +465,11 @@
 </ul>
 </li>
 </ol>
-<p><img src="D:\myblog\source_posts\神经网络\图片16.png" srcset="/img/loading.gif" lazyload alt="神经元模型"></p>
+
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-comment"># Sigmoid函数</span><br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">sigmoid</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>/(<span class="hljs-number">1</span>+np.exp(-x))<br><br>x = np.linspace(-<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">100</span>)<br>y = sigmoid(x)<br>plt.plot(x,y)<br>plt.title(<span class="hljs-string">&quot;Sigmoid Function&quot;</span>)<br>plt.xlabel(<span class="hljs-string">&quot;x&quot;</span>)<br>plt.ylabel(<span class="hljs-string">&quot;σ(x)&quot;</span>)<br>plt.grid()<br>plt.show()<br></code></pre></td></tr></table></figure>
 
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250327171702302.png" srcset="/img/loading.gif" lazyload alt="Sigmoid函数的曲线" style="zoom:67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8717_Sigmoid%E5%87%BD%E6%95%B0%E6%9B%B2%E7%BA%BF.png" srcset="/img/loading.gif" lazyload class="">
 
 <ul>
 <li>在0的右侧，x越大，输出越接近1；在0的左侧，x越大，输出越接近0；</li>
@@ -478,7 +480,7 @@
 <h2 id="二、神经网络模型"><a href="#二、神经网络模型" class="headerlink" title="二、神经网络模型"></a>二、神经网络模型</h2><ul>
 <li><strong>浅层神经网络</strong>：只包含输入层、隐藏层和输出层</li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328185508443.png" srcset="/img/loading.gif" lazyload alt="浅层网络" style="zoom:67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8718_%E6%B5%85%E5%B1%82%E6%A8%A1%E5%9E%8B.png" srcset="/img/loading.gif" lazyload class="">
 
 <h3 id="1-分类"><a href="#1-分类" class="headerlink" title="1.分类"></a>1.分类</h3><ul>
 <li><p><strong>前馈神经网络</strong>——信号从输入层向输出层单向传输的网络</p>
@@ -487,16 +489,19 @@
 <ul>
 <li><p>&#x3D;&#x3D;前向传播&#x3D;&#x3D;：信号传入模型，经过一层层运算得到输出</p>
 </li>
-<li><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328190702976.png" srcset="/img/loading.gif" lazyload alt="一个例子" style="zoom: 50%;" />
+<li><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8719_%E5%89%8D%E5%90%91%E4%BC%A0%E6%92%AD.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>输入层、输出层都有两个神经元：说明输入和输出的数据都是二维的</p>
 <p>在这里我们在隐藏层和输出层都采用$Sigmoid函数$来作为激活函数</p>
 </li>
 <li><p>&#x3D;&#x3D;<strong>反向传播</strong>&#x3D;&#x3D;：输出层往回传（<strong>前向传播的相反过程，所以回传的时候要考虑清楚</strong>）——<strong>用于传输误差</strong></p>
-<p><img src="D:\myblog\source_posts\神经网络\图片20_反向传播.png" srcset="/img/loading.gif" lazyload alt="反向传播的一个例子"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8720_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>往回传，$E_{o1}$先经过$o_1$的激活单元再经过加权单元，最后再传给$w20$——过程本质上是<strong>链式法则求偏导</strong></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328192346202.png" srcset="/img/loading.gif" lazyload alt="传到w11的情况"></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328192516883.png" srcset="/img/loading.gif" lazyload alt="image-20250328192516883"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8721_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E5%88%B0w11%E7%9A%84%E6%83%85%E5%86%B5.png" srcset="/img/loading.gif" lazyload class="">
+
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8722_%E6%B1%82%E5%81%8F%E5%AF%BC%E7%9A%84%E8%BF%87%E7%A8%8B.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>红色公式：梯度下降法的权重更新公式更新$w_11$的值</p>
 </li>
 </ul>
@@ -514,14 +519,16 @@
 <p>——网络深度增加，模型能够拟合更复杂的函数，完成更复杂的任务，但运算量也暴增、梯度消失、梯度爆炸</p>
 <p>————需要根据应用场景和综合算力来综合权衡</p>
 <h3 id="3-激活函数"><a href="#3-激活函数" class="headerlink" title="3.激活函数"></a>3.激活函数</h3><p>前向激活、反向梯度回传（链式法则）</p>
-<h4 id="（1）-Sigmoid-函数"><a href="#（1）-Sigmoid-函数" class="headerlink" title="（1）$Sigmoid$函数"></a>（1）$Sigmoid$函数</h4><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328193246418.png" srcset="/img/loading.gif" lazyload alt="sigmoid函数及其导数"></p>
+<h4 id="（1）-Sigmoid-函数"><a href="#（1）-Sigmoid-函数" class="headerlink" title="（1）$Sigmoid$函数"></a>（1）$Sigmoid$函数</h4><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8723_Sigmoid%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%BC%E6%95%B0.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li><strong>双侧饱和</strong></li>
 <li>全为正梯度饱和会影响神经网络的收敛，会出现<strong>梯度消失</strong></li>
 </ul>
 <h4 id="（2）-tanh-函数"><a href="#（2）-tanh-函数" class="headerlink" title="（2）$tanh$函数"></a>（2）$tanh$函数</h4><p>——又叫双曲正切函数：</p>
 <p>$tanh(x)&#x3D;\frac{e^x-e^{-x}}{e^x+e^{-x}}$</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328193825157.png" srcset="/img/loading.gif" lazyload alt="tanh函数曲线和导数曲线"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8724_tahn%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%BC%E6%95%B0.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li><p>有正有负，可以有效解决$sigmoid函数恒大于0$带来的收敛慢的问题</p>
 </li>
@@ -533,7 +540,8 @@
 <h4 id="（3）-ReLU-函数"><a href="#（3）-ReLU-函数" class="headerlink" title="（3）$ReLU$函数"></a>（3）$ReLU$函数</h4><p>——又叫线性整流函数</p>
 <p>$ReLU(x)&#x3D;max(0,x)$</p>
 <p>解决了梯度消失和运算效率的问题</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328194241644.png" srcset="/img/loading.gif" lazyload alt="ReLU函数及其导数曲线"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8725_Relu%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E5%AF%BC%E6%95%B0.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li><strong>单侧饱和</strong></li>
 <li>函数输入为负值时，输出为0；</li>
@@ -544,7 +552,7 @@
 <li>只存在<strong>线性关系</strong>，计算量比$sigmoid和tanh函数$少很多；</li>
 <li><strong>缺陷</strong>：学习率过大时，一些神经元会永久性失活——影响网络正常更新</li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328202123576.png" srcset="/img/loading.gif" lazyload alt="反向传播时受影响的原因" style="zoom:67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8726_%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E6%97%B6%E5%8F%97%E5%BD%B1%E5%93%8D%E7%9A%84%E5%8E%9F%E5%9B%A0.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>学习率过大时，会导致$\mu\Delta w^t$大于$w^t$的情况，使得$w^{t+1}$的值变为负值</p>
 <p>——》权重为负值时，输入网络的正值会在和权重相乘后也变为负值</p>
@@ -553,10 +561,10 @@
 <p>——》$w$得不到更新，一直为负</p>
 <p>——》其神经元一直输出0，永久失活</p>
 <p>——》<strong>死亡ReLU问题</strong></p>
-<h4 id="（4）-Leaky-ReLU-函数"><a href="#（4）-Leaky-ReLU-函数" class="headerlink" title="（4）$Leaky\  ReLU$函数"></a>（4）$Leaky\  ReLU$函数</h4><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328202941754.png" srcset="/img/loading.gif" lazyload alt="Leaky ReLU的表达式" style="zoom:50%;" />
+<h4 id="（4）-Leaky-ReLU-函数"><a href="#（4）-Leaky-ReLU-函数" class="headerlink" title="（4）$Leaky\  ReLU$函数"></a>（4）$Leaky\  ReLU$函数</h4><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8727_Leaky_ReLU%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>针对<strong>Dead ReLU</strong>而提出的激活函数</p>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328203053867.png" srcset="/img/loading.gif" lazyload alt="image-20250328203053867" style="zoom:67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8728.png" srcset="/img/loading.gif" lazyload class="">
 
 <hr>
 <p><strong>好的激活函数</strong>应该满足两个条件：</p>
@@ -565,7 +573,7 @@
 <li>输出值分布在0的两侧</li>
 </ul>
 <hr>
-<h4 id="（5）-ELU-函数"><a href="#（5）-ELU-函数" class="headerlink" title="（5）$ELU$函数"></a>（5）$ELU$函数</h4><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328204326907.png" srcset="/img/loading.gif" lazyload alt="ELU函数" style="zoom:67%;" />
+<h4 id="（5）-ELU-函数"><a href="#（5）-ELU-函数" class="headerlink" title="（5）$ELU$函数"></a>（5）$ELU$函数</h4><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8729_ELU%E5%87%BD%E6%95%B0.png" srcset="/img/loading.gif" lazyload class="">
 
 <h4 id="（6）-swish-函数"><a href="#（6）-swish-函数" class="headerlink" title="（6）$swish$函数"></a>（6）$swish$函数</h4><p>表达式：$Swish(x)&#x3D;x\cdot \sigma(\beta \cdot x)$</p>
 <ul>
@@ -573,7 +581,7 @@
 <li>$\beta$：可调节参数</li>
 <li>$\sigma(\beta \cdot x)$：$\frac{1}{1+e^{-\beta x}}$</li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328204705123.png" srcset="/img/loading.gif" lazyload alt="Swish函数及其导数曲线" style="zoom:67%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8730_Swish%E5%87%BD%E6%95%B0.png" srcset="/img/loading.gif" lazyload class="">
 
 <ul>
 <li><p>$Sigmoid$ 函数：起到了门控单元的作用</p>
@@ -584,7 +592,8 @@
 </li>
 </ul>
 <h2 id="三、全连接神经网络——多层感知机"><a href="#三、全连接神经网络——多层感知机" class="headerlink" title="三、全连接神经网络——多层感知机"></a>三、全连接神经网络——多层感知机</h2><p>有缺陷</p>
-<h2 id="四、卷积神经网络（CNN）"><a href="#四、卷积神经网络（CNN）" class="headerlink" title="四、卷积神经网络（CNN）"></a>四、卷积神经网络（CNN）</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328233418462.png" srcset="/img/loading.gif" lazyload alt="卷积神经网络"></p>
+<h2 id="四、卷积神经网络（CNN）"><a href="#四、卷积神经网络（CNN）" class="headerlink" title="四、卷积神经网络（CNN）"></a>四、卷积神经网络（CNN）</h2><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8731_%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>——<strong>特征提取器</strong>，能够对图像、音频等数据进行特征提取（卷积赋予的）</p>
 <h3 id="1-系统分类："><a href="#1-系统分类：" class="headerlink" title="1.系统分类："></a>1.系统分类：</h3><ul>
 <li><strong>无记忆系统</strong>：系统输出只与当前输入有关 $y_t&#x3D;f(x_t)$<ul>
@@ -609,16 +618,18 @@
 <li><p>$y(t)$：$t$时刻的响应输出</p>
 </li>
 <li><p>例子：</p>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328220623168.png" srcset="/img/loading.gif" lazyload alt="image-20250328220623168" style="zoom:50%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8732.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>$g(t)变为g(-t)$，计算t时刻的响应输出，再把$g(-t)$平移$t$个单位</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328220553441.png" srcset="/img/loading.gif" lazyload alt="image-20250328220553441"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8733.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li>卷积结果就等于0和1时刻两函数对应值分别相乘，乘积再相加的结果</li>
 </ul>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328221140188.png" srcset="/img/loading.gif" lazyload alt="image-20250328221140188"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8734.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>假设在$T&#x3D;6$时刻运算结束，就可以得到一个长度为7的输出序列</p>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328221251840.png" srcset="/img/loading.gif" lazyload alt="image-20250328221251840" style="zoom:50%;" /></li>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8735.png" srcset="/img/loading.gif" lazyload class=""></li>
 </ul>
 </li>
 <li><p><strong>连续卷积（一维）</strong>：$y(t)&#x3D;\int ^{+\infty}_{-\infty}f(i)\cdot g(t-i)di$</p>
@@ -632,7 +643,8 @@
 <li><p><strong>响应函数的处理</strong>：上下、左右翻转，之后先沿横坐标方向，再沿纵坐标方向平移</p>
 </li>
 </ul>
-<h3 id="3-卷积运算过程"><a href="#3-卷积运算过程" class="headerlink" title="3.卷积运算过程"></a>3.卷积运算过程</h3><h4 id="（1）单通道的二维数据："><a href="#（1）单通道的二维数据：" class="headerlink" title="（1）单通道的二维数据："></a>（1）<strong>单通道的二维数据：</strong></h4><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328222911604.png" srcset="/img/loading.gif" lazyload alt="一个简单的卷积过程"></p>
+<h3 id="3-卷积运算过程"><a href="#3-卷积运算过程" class="headerlink" title="3.卷积运算过程"></a>3.卷积运算过程</h3><h4 id="（1）单通道的二维数据："><a href="#（1）单通道的二维数据：" class="headerlink" title="（1）单通道的二维数据："></a>（1）<strong>单通道的二维数据：</strong></h4><img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8736_%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%8D%B7%E7%A7%AF%E8%BF%87%E7%A8%8B.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li><strong>特征图</strong>：</li>
 <li><strong>权重</strong>：卷积核</li>
@@ -650,7 +662,8 @@
 <ul>
 <li><strong>目的</strong>：填充（padding）后，得到的特征图大小不变</li>
 </ul>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328224302054.png" srcset="/img/loading.gif" lazyload alt="image-20250328224302054"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8737.png" srcset="/img/loading.gif" lazyload class="">
+
 <p><strong>&#x3D;&#x3D;$w_{out}&#x3D;floor(\frac{w_{in}+2*padding-F}{stride})+1$&#x3D;&#x3D;</strong>    ——》默认宽高相同，不同时则需要将宽和高分别带入式子计算得出输出尺寸</p>
 <ul>
 <li>$w_{out}$：输出尺寸</li>
@@ -663,7 +676,8 @@
 <hr>
 <h4 id="（2）多通道卷积："><a href="#（2）多通道卷积：" class="headerlink" title="（2）多通道卷积："></a>（2）<strong>多通道卷积</strong>：</h4><p>卷积核的通道个数要和输入数据的通道个数一致，卷积结果为所有通道的卷积和，<strong>最终输出仍为一个二维的特征图</strong>；</p>
 <p>e.g：RGB——<strong>三通道输入，但只有一个卷积核——所以输出只有一个通道</strong></p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328232754161.png" srcset="/img/loading.gif" lazyload alt="三通道卷积的一个例子"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8738_%E4%B8%89%E9%80%9A%E9%81%93%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li>各通道计算得到的值相加则为输出中对应的值</li>
 </ul>
@@ -671,7 +685,8 @@
 <p>每个卷积核分别于输入卷积进行运算得到一个单通道的输出</p>
 <p>——》多个单通道的输出拼在一起</p>
 <p>——》多通道的输出</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250328233138542.png" srcset="/img/loading.gif" lazyload alt="多通道输入+多个卷积核——》多个单通道输出——》多通道输出"></p>
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8739_%E5%8D%B7%E7%A7%AF%E5%B1%82.png" srcset="/img/loading.gif" lazyload class="">
+
 <ul>
 <li>卷积层的参数：卷积核的大小、数量及步长</li>
 </ul>
@@ -682,7 +697,7 @@
 </ul>
 </li>
 </ul>
-<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250329101825469.png" srcset="/img/loading.gif" lazyload alt="边缘处的像素变化规律——一阶导，二阶导" style="zoom:50%;" />
+<img src="/2025/04/24/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%8740.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>一阶导变化较大，二阶导经过零点</p>
 <ul>
@@ -787,9 +802,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Markdown/" class="print-no-link">#Markdown</a>
-      
         <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="print-no-link">#学习笔记</a>
+      
+        <a href="/tags/Markdown/" class="print-no-link">#Markdown</a>
       
     </div>
   
