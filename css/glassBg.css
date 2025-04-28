@@ -1,13 +1,19 @@
-#board {
--webkit-backdrop-filter: blur(15px);
-backdrop-filter: blur(15px);
+/* 整体背景色 */
+body {
+  background-color: #f7f8fa; /* 浅灰，舒服自然 */
 }
 
-#toc {
-padding: 10px;
-top: 4rem;
-background-color: var(--board-bg-color);
-border-radius: 10px;
--webkit-backdrop-filter: blur(15px);
-backdrop-filter: blur(15px);
+/* 文章卡片区域优化 */
+.card, .post {
+  background: #ffffff; /* 保持内容白底 */
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* 柔和阴影 */
+  padding: 20px;
+}
+
+/* 导航栏美化（可选） */
+#navbar {
+  background: rgba(255, 255, 255, 0.9); /* 半透明白色 */
+  backdrop-filter: blur(10px); /* 毛玻璃效果（现代浏览器支持） */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
