@@ -1,19 +1,30 @@
-/* 整体背景色 */
+/* 整体背景色：淡灰色，不是纯白 */
 body {
-  background-color: #f7f8fa; /* 浅灰，舒服自然 */
+  background-color: #f2f3f5; /* 更柔和的浅灰背景 */
 }
 
-/* 文章卡片区域优化 */
-.card, .post {
-  background: #ffffff; /* 保持内容白底 */
-  border-radius: 10px; /* 圆角 */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* 柔和阴影 */
-  padding: 20px;
-}
-
-/* 导航栏美化（可选） */
+/* 导航栏美化 */
 #navbar {
-  background: rgba(255, 255, 255, 0.9); /* 半透明白色 */
-  backdrop-filter: blur(10px); /* 毛玻璃效果（现代浏览器支持） */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 卡片和文章区域美化 */
+.card, .post, .archive, .page, .category, .tag {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* 让正文文字颜色柔和一点，不是死黑 */
+body, .post-content {
+  color: #333333;
+}
+
+/* 页脚也加一点点柔和背景 */
+#footer {
+  background-color: #f7f7f9;
 }
