@@ -1,6 +1,6 @@
-/* 整体背景色：淡灰色，不是纯白 */
+/* 整体背景色：稍深一点的淡灰 */
 body {
-  background-color: #f2f3f5; /* 更柔和的浅灰背景 */
+  background-color: #ebedf0; /* 比 #f2f3f5 更明显 */
 }
 
 /* 导航栏美化 */
@@ -14,17 +14,24 @@ body {
 .card, .post, .archive, .page, .category, .tag {
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* 阴影稍重一点 */
   padding: 24px;
   margin-bottom: 20px;
+  transition: all 0.3s ease; /* 加一点hover动画 */
 }
 
-/* 让正文文字颜色柔和一点，不是死黑 */
+.card:hover, .post:hover, .archive:hover, .page:hover, .category:hover, .tag:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* 悬停时更有立体感 */
+}
+
+/* 正文文字柔和 */
 body, .post-content {
   color: #333333;
+  font-family: 'Noto Sans SC', 'Lato', 'Helvetica Neue', sans-serif;
 }
 
-/* 页脚也加一点点柔和背景 */
+/* 页脚柔和背景 */
 #footer {
   background-color: #f7f7f9;
 }
+
