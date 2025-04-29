@@ -1,18 +1,18 @@
 /* 整体背景色：稍深一点的淡灰 */
 body {
-  background-color: #ebedf0; /* 比 #f2f3f5 更明显 */
+  background-color: #bc84f4; /* 比 #f2f3f5 更明显 */
 }
 
 /* 导航栏美化 */
 #navbar {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(243, 248, 89, 0.95);
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* 卡片和文章区域美化 */
 .card, .post, .archive, .page, .category, .tag {
-  background: #ffffff;
+  background: #bdf407;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* 阴影稍重一点 */
   padding: 24px;
@@ -32,6 +32,6 @@ body, .post-content {
 
 /* 页脚柔和背景 */
 #footer {
-  background-color: #f7f7f9;
+  background-color: #8282f4;
 }
 
