@@ -4,6 +4,48 @@
   
   
   <entry>
+    <title>go_beginning_250514</title>
+    <link href="/2025/05/14/go-beginning-250514/"/>
+    <url>/2025/05/14/go-beginning-250514/</url>
+    
+    <content type="html"><![CDATA[<h2 id="go"><a href="#go" class="headerlink" title="go"></a><code>go</code></h2><p>2025年5月14 日，正式开始学习go语言。</p><p>安装go语言、搭建开发环境看的是csdn上这篇<a href="%5B%E5%AE%89%E8%A3%85Go%E8%AF%AD%E8%A8%80%E3%80%81%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E3%80%81%E4%BE%9D%E8%B5%96%E5%8C%85%E4%B8%8B%E8%BD%BD%EF%BC%88%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%EF%BC%89_go%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-CSDN%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/qq_38105536/article/details/142635132)">教程</a>  </p><p>同时在看的还有B站up主无闻的视频，笔记及视频资源可以在他的Github主页看到：[go_fundamental_programming](<a href="https://github.com/unknwon/go-fundamental-programming">unknwon&#x2F;go-fundamental-programming: 《Go 编程基础》是一套针对 Google 出品的 Go 语言的视频语音教程，主要面向新手级别的学习者。</a>)</p><h3 id="梦开始的地方："><a href="#梦开始的地方：" class="headerlink" title="梦开始的地方："></a><strong>梦开始的地方：</strong></h3><img src="/2025/05/14/go-beginning-250514/1.png" class=""><p>查看GOPATH路径的结果：</p><img src="/2025/05/14/go-beginning-250514/2.png" class=""><p>进行到Go语言开发工具包时遇到的问题：</p><p>未出现全选的选项，但一段时间之后终端出现了如下显示：</p><img src="/2025/05/14/go-beginning-250514/3.png" class=""><p>新建一个<code>go_projects</code>的文件夹，在vscode中打开此文件夹，切换终端为<code>cmd</code></p><p>使用下列语句新建<strong>属于<code>go</code>的<code>hello</code>文件</strong>：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">go mod init gohello<br></code></pre></td></tr></table></figure><p>之后<strong>新建<code>main.go</code>文件</strong>，并输入下列代码：</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs Go"><span class="hljs-keyword">package</span> main <span class="hljs-comment">//导入main包，表明当前是一个可执行程序</span><br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span> <span class="hljs-comment">//导入内置fmt包</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123; <span class="hljs-comment">//main函数，是程序执行的入口</span><br>fmt.Println(<span class="hljs-string">&quot;Go Hello !&quot;</span>) <span class="hljs-comment">// 在终端打印Go Hello !</span><br>&#125;<br></code></pre></td></tr></table></figure><img src="/2025/05/14/go-beginning-250514/4.png" class=""><p>在终端运行<code>main.go</code>程序，便可得到<code>Go Hello !</code>的输出：</p><img src="/2025/05/14/go-beginning-250514/5.png" class=""><p><code>go build</code>编译，运行程序</p><p>在终端依次输入下列指令：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">go build ##进行编译,之后会生成gohello.exe文件<br><br>gohello.exe ##便可以得到Go Hello!的输出<br></code></pre></td></tr></table></figure><img src="/2025/05/14/go-beginning-250514/6.png" class="">]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>go</tag>
+      
+      <tag>language</tag>
+      
+      <tag>note</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>前后端基础</title>
+    <link href="/2025/05/02/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    <url>/2025/05/02/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前后端关系"><a href="#前后端关系" class="headerlink" title="前后端关系"></a>前后端关系</h1><h2 id="一、前端"><a href="#一、前端" class="headerlink" title="一、前端"></a>一、前端</h2><ul><li><p>看的见得页面（可视</p></li><li><p><strong>响应式</strong>——APP、PC端、小程序、桌面程序</p></li><li><p>使用的语言：</p><ul><li><p>网页三件套：HTML、CSS、JavaScript</p></li><li><p>iOS APP：Object-C</p></li><li><p>Android APP： Java</p></li><li><p>桌面程序：C++</p></li></ul></li></ul><h2 id="二、后端"><a href="#二、后端" class="headerlink" title="二、后端"></a>二、后端</h2><ul><li>给页面提供数据，与服务器打交道</li><li>具体：<ul><li>处理业务逻辑</li><li>处理文件</li><li>处理数据库</li><li>把处理好的结果返回给前端（之后前端将数据展示出来）</li></ul></li><li>语言：<ul><li>Java</li><li>PHP</li><li>Python</li><li>Go</li><li>JavaScript</li></ul></li></ul><h2 id="三、前后端关系"><a href="#三、前后端关系" class="headerlink" title="三、前后端关系"></a>三、前后端关系</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs meimaid"><br></code></pre></td></tr></table></figure><p><img src="/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%85%B3%E7%B3%BB%E5%9B%BE.png" alt="前后端关系图"></p><p>前后端分离，前端——静态界面，数据写死；后端——处理数据后通过接口返回给前端</p><blockquote><p>耕耘技术宅</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>利用hexo和GithubPages搭建个人网站</title>
     <link href="/2025/04/25/%E5%88%A9%E7%94%A8hexo%E5%92%8CGithubPages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
     <url>/2025/04/25/%E5%88%A9%E7%94%A8hexo%E5%92%8CGithubPages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
@@ -54,9 +96,9 @@
     
     <tags>
       
-      <tag>学习笔记</tag>
-      
       <tag>JavaScript</tag>
+      
+      <tag>学习笔记</tag>
       
     </tags>
     
@@ -75,9 +117,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>学习笔记</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
