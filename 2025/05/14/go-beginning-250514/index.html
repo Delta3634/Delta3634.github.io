@@ -35,8 +35,9 @@
 <meta property="og:image" content="http://example.com/2025/05/14/go-beginning-250514/4.png">
 <meta property="og:image" content="http://example.com/2025/05/14/go-beginning-250514/5.png">
 <meta property="og:image" content="http://example.com/2025/05/14/go-beginning-250514/6.png">
+<meta property="og:image" content="http://example.com/2025/05/14/go-beginning-250514/7.png">
 <meta property="article:published_time" content="2025-05-14T03:06:03.000Z">
-<meta property="article:modified_time" content="2025-05-14T03:51:36.483Z">
+<meta property="article:modified_time" content="2025-05-14T08:04:15.341Z">
 <meta property="article:author" content="Delta">
 <meta property="article:tag" content="go">
 <meta property="article:tag" content="language">
@@ -269,7 +270,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          322 字
+          986 字
         
       </span>
     
@@ -280,7 +281,7 @@
         
         
         
-          3 分钟
+          9 分钟
         
       </span>
     
@@ -331,7 +332,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-05-14T11:51:36+08:00
+                    本文最后更新于 2025-05-14T16:04:15+08:00
                   
                   
 
@@ -341,10 +342,10 @@
             
               <div class="markdown-body">
                 
-                <h2 id="go"><a href="#go" class="headerlink" title="go"></a><code>go</code></h2><p>2025年5月14 日，正式开始学习go语言。</p>
+                <h1 id="go"><a href="#go" class="headerlink" title="go"></a><code>go</code></h1><p>2025年5月14 日，正式开始学习go语言。</p>
 <p>安装go语言、搭建开发环境看的是csdn上这篇<a href="%5B%E5%AE%89%E8%A3%85Go%E8%AF%AD%E8%A8%80%E3%80%81%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E3%80%81%E4%BE%9D%E8%B5%96%E5%8C%85%E4%B8%8B%E8%BD%BD%EF%BC%88%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%EF%BC%89_go%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-CSDN%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/qq_38105536/article/details/142635132)">教程</a>  </p>
 <p>同时在看的还有B站up主无闻的视频，笔记及视频资源可以在他的Github主页看到：[go_fundamental_programming](<a target="_blank" rel="noopener" href="https://github.com/unknwon/go-fundamental-programming">unknwon&#x2F;go-fundamental-programming: 《Go 编程基础》是一套针对 Google 出品的 Go 语言的视频语音教程，主要面向新手级别的学习者。</a>)</p>
-<h3 id="梦开始的地方："><a href="#梦开始的地方：" class="headerlink" title="梦开始的地方："></a><strong>梦开始的地方：</strong></h3><img src="/2025/05/14/go-beginning-250514/1.png" srcset="/img/loading.gif" lazyload class="">
+<h2 id="梦开始的地方："><a href="#梦开始的地方：" class="headerlink" title="梦开始的地方："></a><strong>梦开始的地方：</strong></h2><img src="/2025/05/14/go-beginning-250514/1.png" srcset="/img/loading.gif" lazyload class="">
 
 <p>查看GOPATH路径的结果：</p>
 <img src="/2025/05/14/go-beginning-250514/2.png" srcset="/img/loading.gif" lazyload class="">
@@ -370,6 +371,55 @@
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">go build ##进行编译,之后会生成gohello.exe文件<br><br>gohello.exe ##便可以得到Go Hello!的输出<br></code></pre></td></tr></table></figure>
 
 <img src="/2025/05/14/go-beginning-250514/6.png" srcset="/img/loading.gif" lazyload class="">
+
+<h2 id="使用Go-tour进行学习"><a href="#使用Go-tour进行学习" class="headerlink" title="使用Go_tour进行学习"></a>使用<code>Go_tour</code>进行学习</h2><p>第一行<code>Hello World!</code>：</p>
+<p>目前还没学过任何语法，只是早上的HelloGo的模糊记忆，写了几回都报错，最后终于成功….</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs Go"><span class="hljs-keyword">package</span> main <span class="hljs-comment">//声明这是一个可执行程序</span><br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span> <span class="hljs-comment">//导入fmt（格式化输入输出包）</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    fmt.Println(<span class="hljs-string">&quot;Hello World!&quot;</span>) <span class="hljs-comment">//输出</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<img src="/2025/05/14/go-beginning-250514/7.png" srcset="/img/loading.gif" lazyload class="">
+
+<h2 id="包、变量与函数"><a href="#包、变量与函数" class="headerlink" title="包、变量与函数"></a>包、变量与函数</h2><ul>
+<li><p>每个Go程序都由包构成</p>
+</li>
+<li><p>程序从<code>main</code>包开始（所以<code>package main</code>）</p>
+</li>
+<li><p>其他的包就<code>import</code>——多个包时更推荐<strong>分组导入</strong>（用圆括号将导入的包分成一组）：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Go"><span class="hljs-keyword">import</span> (<br>    <span class="hljs-string">&quot;fmt&quot;</span><br>    <span class="hljs-string">&quot;math/rand&quot;</span><br>    <span class="hljs-string">&quot;......&quot;</span><br>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h3><ul>
+<li>只有首字母大写的标识符（变量、函数、类型等）才能被其他包访问</li>
+<li>例如math包中的Pow函数是大写P开头，所以我们可以使用</li>
+<li>如果改为pow（小写p），其他包就无法访问它</li>
+<li>这种机制实现了封装，控制包的对外接口</li>
+</ul>
+<p><strong>变量</strong>：<code>var</code>，</p>
+<ul>
+<li>变量类型搞到变量后面</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Go"><span class="hljs-keyword">var</span> a <span class="hljs-type">bool</span>;<span class="hljs-comment">//初始化为false</span><br><span class="hljs-keyword">var</span> b <span class="hljs-type">int</span>;<span class="hljs-comment">//这里就被初始化为0</span><br><br></code></pre></td></tr></table></figure>
+
+
+
+<p>虚数定义的时候不能单独地写<code>i</code>，如果是<code>5+i</code>，那也要写成<code>5+1i</code></p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span>(<br>	<span class="hljs-string">&quot;fmt&quot;</span><br>	<span class="hljs-string">&quot;math/rand&quot;</span><br>)<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>	fmt.Println(<span class="hljs-string">&quot;我最喜欢的数字是，&quot;</span>,rand.Intn(<span class="hljs-number">10</span>))<span class="hljs-comment">//这里包一个括号吧这些包起，，没得分号这些</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h2><h3 id="1-for-循环"><a href="#1-for-循环" class="headerlink" title="1.for 循环"></a>1.for 循环</h3><h4 id="1-基础定义"><a href="#1-基础定义" class="headerlink" title="1&gt;基础定义"></a>1&gt;基础定义</h4><p><strong>条件依旧由三部分构成（这里的定义就用<code>:=</code>，简单，但是不用括号<code>()</code>括起，花括号还是需要的哈<code>&#123;&#125;</code>）</strong></p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs Go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>	sum := <span class="hljs-number">0</span><br>	<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++ &#123;<br>		sum += i<br>	&#125;<br>	fmt.Println(sum)<br>&#125;<br><br><span class="hljs-comment">// result = 45 --sum of 0/1/2/3/4/5/6/7/8/9</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="2-循环语句简化"><a href="#2-循环语句简化" class="headerlink" title="2&gt; 循环语句简化"></a>2&gt; 循环语句简化</h4><ul>
+<li>其中的初始化语句和后置语句是可选的（省略,<strong>加一个分号<code>;</code>就行</strong>）</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs GO"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>	sum := <span class="hljs-number">1</span><br>	<span class="hljs-keyword">for</span> ; sum &lt; <span class="hljs-number">1000</span>; &#123;<br>		sum += sum<br>	&#125;<br>	fmt.Println(sum)<br>&#125;<br><span class="hljs-comment">// result = 1024 这里就没有初始化语句和后置于句，只有结束语句</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="3-for也可以是GO中的while：去掉分号"><a href="#3-for也可以是GO中的while：去掉分号" class="headerlink" title="3&gt;for也可以是GO中的while：去掉分号"></a>3&gt;<code>for</code>也可以是<code>GO</code>中的<code>while</code>：去掉分号</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs GO"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>	sum := <span class="hljs-number">1</span><br>	<span class="hljs-keyword">for</span> sum &lt; <span class="hljs-number">1000</span> &#123;<br>		sum += sum<br>	&#125;<br>	fmt.Println(sum)<br>&#125;<br><span class="hljs-comment">// result = 1024 这里相较于上一条省掉了;就变成了while</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="4-无限循环：省略循环条件"><a href="#4-无限循环：省略循环条件" class="headerlink" title="4&gt;无限循环：省略循环条件"></a>4&gt;无限循环：省略循环条件</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs GO"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>	<span class="hljs-keyword">for</span> &#123;<br>	&#125;<br>&#125;<br><span class="hljs-comment">// result:</span><br>​ timeout running program<br></code></pre></td></tr></table></figure>
+
+<h3 id="2-if-判断"><a href="#2-if-判断" class="headerlink" title="2.if 判断"></a>2.if 判断</h3><h4 id="1-基础定义-1"><a href="#1-基础定义-1" class="headerlink" title="1&gt;基础定义"></a>1&gt;基础定义</h4><p><strong>表达式无须括号<code>()</code>括起，但花括号还是需要的<code>&#123;&#125;</code></strong></p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> (<br>	<span class="hljs-string">&quot;fmt&quot;</span><br>	<span class="hljs-string">&quot;math&quot;</span><br>)<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sqrt</span><span class="hljs-params">(x <span class="hljs-type">float64</span>)</span></span> <span class="hljs-type">string</span> &#123;<br>	<span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">0</span> &#123;<br>		<span class="hljs-keyword">return</span> sqrt(-x) + <span class="hljs-string">&quot;i&quot;</span><br>	&#125;<br>	<span class="hljs-keyword">return</span> fmt.Sprint(math.Sqrt(x))<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>	fmt.Println(sqrt(<span class="hljs-number">2</span>), sqrt(<span class="hljs-number">-4</span>))<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+<h4 id="2-if和简短语句"><a href="#2-if和简短语句" class="headerlink" title="2&gt;if和简短语句"></a>2&gt;if和简短语句</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs GO"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> (<br>	<span class="hljs-string">&quot;fmt&quot;</span><br>	<span class="hljs-string">&quot;math&quot;</span><br>)<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">pow</span><span class="hljs-params">(x, n, lim <span class="hljs-type">float64</span>)</span></span> <span class="hljs-type">float64</span> &#123;<br>	<span class="hljs-keyword">if</span> v := math.Pow(x, n); v &lt; lim &#123;<br>		<span class="hljs-keyword">return</span> v<br>	&#125;<br>	<span class="hljs-keyword">return</span> lim<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>	fmt.Println(<br>		pow(<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">10</span>),<br>		pow(<span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">20</span>),<br>	)<br>&#125;<br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -447,6 +497,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2025/05/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A%E4%B9%8B%E9%98%85%E8%AF%BB%E7%BB%8F%E9%AA%8C/" title="第一篇论文阅读报告之阅读经验">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">第一篇论文阅读报告之阅读经验</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
