@@ -30,7 +30,7 @@
 <meta property="og:description" content="Hexo 博客中配置 Emoji 表情显示（适用于 Fluid 主题） 在 Hexo 博客中，如果你想通过 markdown 的 &lt;span class&#x3D;&quot;emoji&quot; alias&#x3D;&quot;smile&quot; style&#x3D;&quot;&quot; fallback-src&#x3D;&quot;https:&#x2F;&#x2F;github.githubassets.com&#x2F;images&#x2F;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-24T13:04:32.000Z">
-<meta property="article:modified_time" content="2025-05-24T13:10:53.486Z">
+<meta property="article:modified_time" content="2025-05-24T13:12:43.918Z">
 <meta property="article:author" content="Delta">
 <meta property="article:tag" content="教程分享">
 <meta name="twitter:card" content="summary_large_image">
@@ -322,7 +322,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-05-24T21:10:53+08:00
+                    本文最后更新于 2025-05-24T21:12:43+08:00
                   
                   
 
@@ -359,11 +359,11 @@
 <hr>
 <h3 id="5写一篇测试博文试试看"><a class="markdownIt-Anchor" href="#5写一篇测试博文试试看"></a> 5.写一篇测试博文试试看！</h3>
 <p>在你的 <code>.md</code> 文件中加入如下语法：</p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">Hello Emoji! <span class="emoji" alias="smile" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">&#x1f604;</span> <span class="emoji" alias="heart" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8">&#x2764;</span> <span class="emoji" alias="rocket" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8">&#x1f680;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-title class_">Hello</span> <span class="hljs-title class_">Emoji</span>! <span class="hljs-symbol">:smile</span>: <span class="hljs-symbol">:heart</span>: <span class="hljs-symbol">:rocket</span><span class="hljs-symbol">:</span><br></code></pre></td></tr></table></figure>
 <p>如果配置成功，则会显示如下：</p>
 <p>Hello Emoji! <span class="emoji" alias="smile" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span> <span class="emoji" alias="heart" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8">❤</span> <span class="emoji" alias="rocket" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8">🚀</span></p>
 <h3 id="示例效果"><a class="markdownIt-Anchor" href="#示例效果"></a> 示例效果</h3>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs txt">我今天好开心！<span class="emoji" alias="blush" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png?v8">&#x1f60a;</span><br>坚持梦想！<span class="emoji" alias="muscle" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png?v8">&#x1f4aa;</span> <span class="emoji" alias="star" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">&#x2b50;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs elixir">我今天好开心！<span class="hljs-symbol">:blush</span>:<br>坚持梦想！<span class="hljs-symbol">:muscle</span>: <span class="hljs-symbol">:star</span><span class="hljs-symbol">:</span><br></code></pre></td></tr></table></figure>
 <p>渲染后就是：</p>
 <p>我今天好开心！😊<br>
 坚持梦想！💪 ⭐</p>
@@ -372,30 +372,30 @@
 <table>
 <thead>
 <tr>
-<th>项目</th>
-<th>说明</th>
+<th style="text-align:center">项目</th>
+<th style="text-align:center">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>渲染器更换</td>
-<td><code>hexo-renderer-markdown-it-plus</code></td>
+<td style="text-align:center">渲染器更换</td>
+<td style="text-align:center"><code>hexo-renderer-markdown-it-plus</code></td>
 </tr>
 <tr>
-<td>插件支持方式</td>
-<td><code>markdown_it_plus.plugins</code></td>
+<td style="text-align:center">插件支持方式</td>
+<td style="text-align:center"><code>markdown_it_plus.plugins</code></td>
 </tr>
 <tr>
-<td>插件名称</td>
-<td><code>markdown-it-emoji</code></td>
+<td style="text-align:center">插件名称</td>
+<td style="text-align:center"><code>markdown-it-emoji</code></td>
 </tr>
 <tr>
-<td>主题适配性</td>
-<td>Fluid 主题完全兼容</td>
+<td style="text-align:center">主题适配性</td>
+<td style="text-align:center">Fluid 主题完全兼容</td>
 </tr>
 <tr>
-<td>适用语法</td>
-<td><code>&lt;span class=&quot;emoji&quot; alias=&quot;smile&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8&quot;&gt;&amp;#x1f604;&lt;/span&gt;</code>、<code>&lt;span class=&quot;emoji&quot; alias=&quot;heart&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8&quot;&gt;&amp;#x2764;&lt;/span&gt;</code> 等 emoji 表情</td>
+<td style="text-align:center">适用语法</td>
+<td style="text-align:center"><code>&lt;span class=&quot;emoji&quot; alias=&quot;smile&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8&quot;&gt;&amp;#x1f604;&lt;/span&gt;</code>、<code>&lt;span class=&quot;emoji&quot; alias=&quot;heart&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8&quot;&gt;&amp;#x2764;&lt;/span&gt;</code> 等 emoji 表情</td>
 </tr>
 </tbody>
 </table>
