@@ -30,7 +30,7 @@
 <meta property="og:description" content="Hexo 博客中配置 Emoji 表情显示（适用于 Fluid 主题） 在 Hexo 博客中，如果你想通过 markdown 的 &lt;span class&#x3D;&quot;emoji&quot; alias&#x3D;&quot;smile&quot; style&#x3D;&quot;&quot; fallback-src&#x3D;&quot;https:&#x2F;&#x2F;github.githubassets.com&#x2F;images&#x2F;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-24T13:04:32.000Z">
-<meta property="article:modified_time" content="2025-05-24T13:12:43.918Z">
+<meta property="article:modified_time" content="2025-05-24T13:16:24.551Z">
 <meta property="article:author" content="Delta">
 <meta property="article:tag" content="教程分享">
 <meta name="twitter:card" content="summary_large_image">
@@ -260,7 +260,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          473 字
+          359 字
         
       </span>
     
@@ -271,7 +271,7 @@
         
         
         
-          4 分钟
+          3 分钟
         
       </span>
     
@@ -322,7 +322,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-05-24T21:12:43+08:00
+                    本文最后更新于 2025-05-24T21:16:24+08:00
                   
                   
 
@@ -334,16 +334,13 @@
                 
                 <h2 id="hexo-博客中配置-emoji-表情显示适用于-fluid-主题"><a class="markdownIt-Anchor" href="#hexo-博客中配置-emoji-表情显示适用于-fluid-主题"></a> Hexo 博客中配置 Emoji 表情显示（适用于 Fluid 主题）</h2>
 <p>在 Hexo 博客中，如果你想通过 markdown 的 <code>&lt;span class=&quot;emoji&quot; alias=&quot;smile&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8&quot;&gt;&amp;#x1f604;&lt;/span&gt;</code> 语法来插入 emoji 表情，可以按照以下步骤进行配置。本教程以<strong>我使用的 Fluid 主题</strong>为例，进行配置。</p>
-<hr>
 <h3 id="1卸载默认的-markdown-渲染器"><a class="markdownIt-Anchor" href="#1卸载默认的-markdown-渲染器"></a> 1.卸载默认的 Markdown 渲染器</h3>
 <p>Hexo 默认使用 <code>hexo-renderer-marked</code> 渲染器，它不支持 emoji 插件，因此我们要换成增强版的 <code>hexo-renderer-markdown-it-plus</code>。</p>
 <p>在博客根目录打开终端，运行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm uninstall hexo-renderer-markdown-it<br></code></pre></td></tr></table></figure>
-<hr>
 <h3 id="2安装增强版渲染器及插件支持"><a class="markdownIt-Anchor" href="#2安装增强版渲染器及插件支持"></a> 2.安装增强版渲染器及插件支持</h3>
 <p>继续在终端中输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-renderer-markdown-it-plus --save<br></code></pre></td></tr></table></figure>
-<hr>
 <h3 id="3在-_configyml-中添加-emoji-插件配置"><a class="markdownIt-Anchor" href="#3在-_configyml-中添加-emoji-插件配置"></a> 3.在 <code>_config.yml</code> 中添加 emoji 插件配置</h3>
 <p>打开 Hexo 根目录下的 <code>_config.yml</code> 文件，添加如下配置（可以放在文件末尾）：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">markdown_it_plus:</span><br>  <span class="hljs-attr">highlight:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">html:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">xhtmlOut:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">breaks:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">linkify:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">typographer:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">plugins:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">plugin:</span><br>        <span class="hljs-attr">name:</span> <span class="hljs-string">markdown-it-emoji</span><br></code></pre></td></tr></table></figure>
@@ -352,11 +349,9 @@
 <li>确保缩进正确，否则会导致 Hexo 报错。</li>
 <li>如果你之前配置过 <code>markdown:</code> 字段，请删除它。</li>
 </ul>
-<hr>
 <h3 id="4清除缓存并重新生成部署"><a class="markdownIt-Anchor" href="#4清除缓存并重新生成部署"></a> 4.清除缓存并重新生成部署</h3>
 <p>在终端中运行以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g -d<br></code></pre></td></tr></table></figure>
-<hr>
 <h3 id="5写一篇测试博文试试看"><a class="markdownIt-Anchor" href="#5写一篇测试博文试试看"></a> 5.写一篇测试博文试试看！</h3>
 <p>在你的 <code>.md</code> 文件中加入如下语法：</p>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-title class_">Hello</span> <span class="hljs-title class_">Emoji</span>! <span class="hljs-symbol">:smile</span>: <span class="hljs-symbol">:heart</span>: <span class="hljs-symbol">:rocket</span><span class="hljs-symbol">:</span><br></code></pre></td></tr></table></figure>
@@ -367,38 +362,6 @@
 <p>渲染后就是：</p>
 <p>我今天好开心！😊<br>
 坚持梦想！💪 ⭐</p>
-<hr>
-<h3 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">项目</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">渲染器更换</td>
-<td style="text-align:center"><code>hexo-renderer-markdown-it-plus</code></td>
-</tr>
-<tr>
-<td style="text-align:center">插件支持方式</td>
-<td style="text-align:center"><code>markdown_it_plus.plugins</code></td>
-</tr>
-<tr>
-<td style="text-align:center">插件名称</td>
-<td style="text-align:center"><code>markdown-it-emoji</code></td>
-</tr>
-<tr>
-<td style="text-align:center">主题适配性</td>
-<td style="text-align:center">Fluid 主题完全兼容</td>
-</tr>
-<tr>
-<td style="text-align:center">适用语法</td>
-<td style="text-align:center"><code>&lt;span class=&quot;emoji&quot; alias=&quot;smile&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8&quot;&gt;&amp;#x1f604;&lt;/span&gt;</code>、<code>&lt;span class=&quot;emoji&quot; alias=&quot;heart&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8&quot;&gt;&amp;#x2764;&lt;/span&gt;</code> 等 emoji 表情</td>
-</tr>
-</tbody>
-</table>
 
                 
               </div>
