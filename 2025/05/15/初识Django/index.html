@@ -22,12 +22,12 @@
   <meta name="author" content="Delta">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Django框架一、简介 python Web 框架 MVC模式：Model（模型） View（视图） Controller（控制器） 实际是MVT模式  二、初识Django项目1.django-admin：命令行指令12345678910111213141516171819202122232425262728Available subcommands:[django]    check">
+    <meta name="description" content="Django框架 一、简介  python Web 框架 MVC模式：Model（模型） View（视图） Controller（控制器） 实际是MVT模式  二、初识Django项目 1.django-admin：命令行指令 12345678910111213141516171819202122232425262728Available subcommands:[django]    check">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django初始">
 <meta property="og:url" content="http://example.com/2025/05/15/%E5%88%9D%E8%AF%86Django/index.html">
 <meta property="og:site_name" content="Delta">
-<meta property="og:description" content="Django框架一、简介 python Web 框架 MVC模式：Model（模型） View（视图） Controller（控制器） 实际是MVT模式  二、初识Django项目1.django-admin：命令行指令12345678910111213141516171819202122232425262728Available subcommands:[django]    check">
+<meta property="og:description" content="Django框架 一、简介  python Web 框架 MVC模式：Model（模型） View（视图） Controller（控制器） 实际是MVT模式  二、初识Django项目 1.django-admin：命令行指令 12345678910111213141516171819202122232425262728Available subcommands:[django]    check">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322154321008.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322154942417.png">
@@ -35,14 +35,14 @@
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322163548504.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322172523465.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322173328088.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322181842991.png">
+<meta property="og:image" content="c:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322181842991.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322182131544.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322183650296.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322185646952.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322191352406.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322192053283.png">
+<meta property="og:image" content="c:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322185646952.png">
+<meta property="og:image" content="c:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322191352406.png">
+<meta property="og:image" content="c:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322192053283.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322193648122.png">
-<meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322203141394.png">
+<meta property="og:image" content="c:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322203141394.png">
 <meta property="og:image" content="c:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322195259601.png">
 <meta property="article:published_time" content="2025-05-15T11:40:20.000Z">
 <meta property="article:modified_time" content="2025-05-15T11:41:57.531Z">
@@ -349,167 +349,193 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Django框架"><a href="#Django框架" class="headerlink" title="Django框架"></a>Django框架</h1><h2 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h2><ol>
+                <h1>Django框架</h1>
+<h2 id="一、简介">一、简介</h2>
+<ol>
 <li>python Web 框架</li>
 <li><strong>MVC模式</strong>：Model（模型） View（视图） Controller（控制器）</li>
 <li>实际是<strong>MVT模式</strong></li>
 </ol>
-<h2 id="二、初识Django项目"><a href="#二、初识Django项目" class="headerlink" title="二、初识Django项目"></a>二、初识Django项目</h2><h3 id="1-django-admin：命令行指令"><a href="#1-django-admin：命令行指令" class="headerlink" title="1.django-admin：命令行指令"></a>1.<strong><code>django-admin</code></strong>：命令行指令</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs CMD">Available subcommands:<br><br>[django]<br>    check      # 校验项目的完整性<br>    compilemessages<br>    createcachetable<br>    dbshell<br>    diffsettings<br>    dumpdata        # （数据库相关）把数据库数据导出到文件<br>    flush<br>    inspectdb<br>    loaddata        # （数据库相关）把文件数据导入到数据库<br>    makemessages<br>    makemigrations  # （数据库相关）创建模型变更的迁移文件<br>    migrate         # （数据库相关）执行上一个命令创建的迁移文件<br>    optimizemigration<br>    runserver      # 进入Django环境并且运行Django的项目（本地简易运行）<br>    sendtestemail<br>    shell          # 进入Django项目的python shell环境<br>    showmigrations<br>    sqlflush<br>    sqlmigrate<br>    sqlsequencereset<br>    squashmigrations<br>    startapp      # 创建一个Django应用<br>    startproject  # 创建一个Django项目<br>    test          # 跑一些需要单元测试的命令（执行Django用例测试）<br>    testserver<br></code></pre></td></tr></table></figure>
-
+<h2 id="二、初识Django项目">二、初识Django项目</h2>
+<h3 id="1-django-admin：命令行指令">1.<strong><code>django-admin</code></strong>：命令行指令</h3>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs CMD">Available subcommands:<br><br>[django]<br>    check      # 校验项目的完整性<br>    compilemessages<br>    createcachetable<br>    dbshell<br>    diffsettings<br>    dumpdata        # （数据库相关）把数据库数据导出到文件<br>    flush<br>    inspectdb<br>    loaddata        # （数据库相关）把文件数据导入到数据库<br>    makemessages<br>    makemigrations  # （数据库相关）创建模型变更的迁移文件<br>    migrate         # （数据库相关）执行上一个命令创建的迁移文件<br>    optimizemigration<br>    runserver      # 进入Django环境并且运行Django的项目（本地简易运行）<br>    sendtestemail<br>    shell          # 进入Django项目的python shell环境<br>    showmigrations<br>    sqlflush<br>    sqlmigrate<br>    sqlsequencereset<br>    squashmigrations<br>    startapp      # 创建一个Django应用<br>    startproject  # 创建一个Django项目<br>    test          # 跑一些需要单元测试的命令（执行Django用例测试）<br>    testserver<br></code></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
-<th align="center">基本常用命令</th>
-<th align="center">介绍</th>
+<th style="text-align:center">基本常用命令</th>
+<th style="text-align:center">介绍</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">startproject</td>
-<td align="center">创建一个Django项目</td>
+<tbody>
+<tr>
+<td style="text-align:center">startproject</td>
+<td style="text-align:center">创建一个Django项目</td>
 </tr>
 <tr>
-<td align="center">startapp</td>
-<td align="center">创建一个Django应用</td>
+<td style="text-align:center">startapp</td>
+<td style="text-align:center">创建一个Django应用</td>
 </tr>
 <tr>
-<td align="center">test</td>
-<td align="center">跑一些需要单元测试的命令（执行Django用例测试）</td>
+<td style="text-align:center">test</td>
+<td style="text-align:center">跑一些需要单元测试的命令（执行Django用例测试）</td>
 </tr>
 <tr>
-<td align="center">shell</td>
-<td align="center">进入Django项目的python shell环境</td>
+<td style="text-align:center">shell</td>
+<td style="text-align:center">进入Django项目的python shell环境</td>
 </tr>
 <tr>
-<td align="center">runserver</td>
-<td align="center">进入Django环境并且运行Django的项目（本地简易运行）</td>
+<td style="text-align:center">runserver</td>
+<td style="text-align:center">进入Django环境并且运行Django的项目（本地简易运行）</td>
 </tr>
 <tr>
-<td align="center">check</td>
-<td align="center">校验项目的完整性</td>
+<td style="text-align:center">check</td>
+<td style="text-align:center">校验项目的完整性</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
-<th align="center">数据库常用命令</th>
-<th align="center">简介</th>
+<th style="text-align:center">数据库常用命令</th>
+<th style="text-align:center">简介</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">makemigrations</td>
-<td align="center">创建模型变更的迁移文件</td>
+<tbody>
+<tr>
+<td style="text-align:center">makemigrations</td>
+<td style="text-align:center">创建模型变更的迁移文件</td>
 </tr>
 <tr>
-<td align="center">migrate</td>
-<td align="center">执行上一个命令创建的迁移文件</td>
+<td style="text-align:center">migrate</td>
+<td style="text-align:center">执行上一个命令创建的迁移文件</td>
 </tr>
 <tr>
-<td align="center">dumpdata</td>
-<td align="center">把数据库数据导出到文件</td>
+<td style="text-align:center">dumpdata</td>
+<td style="text-align:center">把数据库数据导出到文件</td>
 </tr>
 <tr>
-<td align="center">loaddata</td>
-<td align="center">把文件数据导入到数据库</td>
+<td style="text-align:center">loaddata</td>
+<td style="text-align:center">把文件数据导入到数据库</td>
 </tr>
-</tbody></table>
-<h3 id="2-创建项目并认识项目的框架文件"><a href="#2-创建项目并认识项目的框架文件" class="headerlink" title="2. 创建项目并认识项目的框架文件"></a>2. 创建项目并认识项目的框架文件</h3><h4 id="（1）python-manage-py-startproject-django-introduction创建一个Django项目"><a href="#（1）python-manage-py-startproject-django-introduction创建一个Django项目" class="headerlink" title="（1）python manage.py startproject django_introduction创建一个Django项目"></a>（1）<code>python manage.py startproject django_introduction</code>创建一个Django项目</h4><p>环境、管理文件、项目创建命令、项目名称</p>
+</tbody>
+</table>
+<h3 id="2-创建项目并认识项目的框架文件">2. 创建项目并认识项目的框架文件</h3>
+<h4 id="（1）python-manage-py-startproject-django-introduction创建一个Django项目">（1）<code>python manage.py startproject django_introduction</code>创建一个Django项目</h4>
+<p>环境、管理文件、项目创建命令、项目名称</p>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322154321008.png" srcset="/img/loading.gif" lazyload alt="image-20250322154321008" style="zoom: 80%;" />
-
-<h4 id="（2）项目目录–初始化项目的必备文件"><a href="#（2）项目目录–初始化项目的必备文件" class="headerlink" title="（2）项目目录–初始化项目的必备文件"></a>（2）项目目录–初始化项目的必备文件</h4><p><strong><code>settings.py</code></strong>：Django项目的配置文件</p>
+<h4 id="（2）项目目录–初始化项目的必备文件">（2）项目目录–初始化项目的必备文件</h4>
+<p><strong><code>settings.py</code></strong>：Django项目的配置文件</p>
 <p><strong><code>urls.py</code></strong>：Django的路由文件</p>
 <p><strong><code>wsgi.py</code></strong>：Django作为wsgj文件所需要的文件</p>
-<h4 id="（3）manage-py文件"><a href="#（3）manage-py文件" class="headerlink" title="（3）manage.py文件"></a>（3）manage.py文件</h4><p>项目的管理文件</p>
-<h4 id="（4）-通过python-manage-py-runserver运行初始化项目"><a href="#（4）-通过python-manage-py-runserver运行初始化项目" class="headerlink" title="（4） 通过python manage.py runserver运行初始化项目"></a>（4） 通过<code>python manage.py runserver</code>运行初始化项目</h4><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322154942417.png" srcset="/img/loading.gif" lazyload alt="image-20250322154942417" style="zoom:67%;" />
-
+<h4 id="（3）manage-py文件">（3）manage.py文件</h4>
+<p>项目的管理文件</p>
+<h4 id="（4）-通过python-manage-py-runserver运行初始化项目">（4） 通过<code>python manage.py runserver</code>运行初始化项目</h4>
+<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322154942417.png" srcset="/img/loading.gif" lazyload alt="image-20250322154942417" style="zoom:67%;" />
 <p>出现此界面则初始化成功！</p>
-<h2 id="三、初识Django应用"><a href="#三、初识Django应用" class="headerlink" title="三、初识Django应用"></a>三、初识Django应用</h2><h3 id="1-Django应用-VS-Django项目"><a href="#1-Django应用-VS-Django项目" class="headerlink" title="1.Django应用 VS Django项目"></a>1.Django应用 VS Django项目</h3><ul>
+<h2 id="三、初识Django应用">三、初识Django应用</h2>
+<h3 id="1-Django应用-VS-Django项目">1.Django应用 VS Django项目</h3>
+<ul>
 <li>Django项目：包含Django项目</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th align="center"></th>
-<th align="center">Django项目</th>
-<th align="center">Django应用</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Django项目</th>
+<th style="text-align:center">Django应用</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">定义</td>
-<td align="center">基于Django的Web应用</td>
-<td align="center">可重用的python软件包（不可以直接运行）</td>
+<tbody>
+<tr>
+<td style="text-align:center">定义</td>
+<td style="text-align:center">基于Django的Web应用</td>
+<td style="text-align:center">可重用的python软件包（不可以直接运行）</td>
 </tr>
 <tr>
-<td align="center">包含关系</td>
-<td align="center">一个Django项目包含<strong>一组配置</strong>和<strong>若干个Django应用</strong></td>
-<td align="center">每个应用可以自己管理模型、视图、模版、路由和静态文件等</td>
+<td style="text-align:center">包含关系</td>
+<td style="text-align:center">一个Django项目包含<strong>一组配置</strong>和<strong>若干个Django应用</strong></td>
+<td style="text-align:center">每个应用可以自己管理模型、视图、模版、路由和静态文件等</td>
 </tr>
-</tbody></table>
-<h3 id="2-Django应用目录介绍"><a href="#2-Django应用目录介绍" class="headerlink" title="2.Django应用目录介绍"></a>2.Django应用目录介绍</h3><h4 id="（1）python-manage-py-startapp-blog创建一个Django应用"><a href="#（1）python-manage-py-startapp-blog创建一个Django应用" class="headerlink" title="（1）python manage.py startapp blog创建一个Django应用"></a>（1）<code>python manage.py startapp blog</code>创建一个Django应用</h4><p>环境、管理文件、应用创建命令、应用名称</p>
+</tbody>
+</table>
+<h3 id="2-Django应用目录介绍">2.Django应用目录介绍</h3>
+<h4 id="（1）python-manage-py-startapp-blog创建一个Django应用">（1）<code>python manage.py startapp blog</code>创建一个Django应用</h4>
+<p>环境、管理文件、应用创建命令、应用名称</p>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322160316486.png" srcset="/img/loading.gif" lazyload alt="image-20250322160316486" style="zoom:80%;" />
-
-<h4 id="（2）应用目录"><a href="#（2）应用目录" class="headerlink" title="（2）应用目录"></a>（2）应用目录</h4><p><strong><code>views.py</code></strong>：视图处理</p>
+<h4 id="（2）应用目录">（2）应用目录</h4>
+<p><strong><code>views.py</code></strong>：视图处理</p>
 <p><strong><code>models.py</code></strong>：定义应用模型</p>
 <p><strong><code>admin.py</code></strong>：定义Admin模块管理对象</p>
 <p><strong><code>apps.py</code></strong>：声明应用</p>
 <p><strong><code>tests.py</code></strong>：编写应用测试用例</p>
 <p><strong><code>urls.py</code></strong>：<strong>（自行创建）</strong>，管理应用路由</p>
-<h2 id="四、Django-HelloWorld"><a href="#四、Django-HelloWorld" class="headerlink" title="四、Django HelloWorld"></a>四、Django HelloWorld</h2><h3 id="1-Django视图（what、why和how）"><a href="#1-Django视图（what、why和how）" class="headerlink" title="1. Django视图（what、why和how）"></a>1. Django视图（what、why和how）</h3><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322163548504.png" srcset="/img/loading.gif" lazyload alt="image-20250322163548504" style="zoom:50%;" />
-
+<h2 id="四、Django-HelloWorld">四、Django HelloWorld</h2>
+<h3 id="1-Django视图（what、why和how）">1. Django视图（what、why和how）</h3>
+<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322163548504.png" srcset="/img/loading.gif" lazyload alt="image-20250322163548504" style="zoom:50%;" />
 <p>在**<code>views.py</code><strong>文件中定义函数，引入</strong><code>HttpResponse</code>**，然后封装</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">from django.http import HttpResponse</span><br></code></pre></td></tr></table></figure>
-
 <p>视图函数定义如下：</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">def hello_world(request): </span><br><span class="language-xml">    return HttpResponse(&quot;Hello World&quot;) </span><br></code></pre></td></tr></table></figure>
-
-<h3 id="2-Django路由（what、why和how）"><a href="#2-Django路由（what、why和how）" class="headerlink" title="2. Django路由（what、why和how）"></a>2. Django路由（what、why和how）</h3><ul>
+<h3 id="2-Django路由（what、why和how）">2. Django路由（what、why和how）</h3>
+<ul>
 <li>只定义视图不能成功显示**（请求没办法到达刚才的视图函数）<strong>，还需要</strong>配置路由**（<strong>绑定视图函数和URL</strong>）</li>
 </ul>
-<h4 id="路由层次——应用层次-项目层次"><a href="#路由层次——应用层次-项目层次" class="headerlink" title="路由层次——应用层次&amp;项目层次"></a>路由层次——应用层次&amp;项目层次</h4><p><em><strong>先应用层次再项目层次</strong></em></p>
-<h4 id="（1）应用层次"><a href="#（1）应用层次" class="headerlink" title="（1）应用层次"></a>（1）应用层次</h4><ul>
+<h4 id="路由层次——应用层次-项目层次">路由层次——应用层次&amp;项目层次</h4>
+<p><em><strong>先应用层次再项目层次</strong></em></p>
+<h4 id="（1）应用层次">（1）应用层次</h4>
+<ul>
 <li><strong>创建<code>urls.py</code>文件</strong>，引入该有的包</li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">from django.urls import path,include # 要引入path和include</span><br><span class="language-xml"></span><br><span class="language-xml"># import blog.views # blog是该应用的名称，引入其中的views，出现了报错——注释掉这一句</span><br><span class="language-xml">#采用新的方式：</span><br><span class="language-xml">from . import views # 现在OK了</span><br><span class="language-xml"></span><br><span class="language-xml">urlpatterns = [</span><br><span class="language-xml">    path(&#x27;hello_world&#x27;,views.hello_world)</span><br><span class="language-xml">]  # 设置url配置，检测到hello_world，那就映射到blog.views文件中的hello_world函数</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="（2）项目层次"><a href="#（2）项目层次" class="headerlink" title="（2）项目层次"></a>（2）项目层次</h4><ul>
+<h4 id="（2）项目层次">（2）项目层次</h4>
+<ul>
 <li><strong>补充引入该有的包<code>include</code></strong>：</li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">from django.contrib import admin</span><br><span class="language-xml">from django.urls import path,include # 就是在这里（引入include</span><br></code></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>在<code>urlpatterns</code>中添加路由配置</strong>：</li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">urlpatterns = [</span><br><span class="language-xml">    path(&#x27;admin/&#x27;, admin.site.urls),</span><br><span class="language-xml">    path(&#x27;blog/&#x27;,include(&#x27;blog.urls&#x27;)) # 这里是添加的 意义为：地址中有了blog，那就将其转发到刚刚实现的blog里的urls</span><br><span class="language-xml">]</span><br></code></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>在<code>setting.py</code>中添加应用</strong>：</li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">INSTALLED_APPS = [</span><br><span class="language-xml">    &#x27;django.contrib.admin&#x27;,</span><br><span class="language-xml">    &#x27;django.contrib.auth&#x27;,</span><br><span class="language-xml">    &#x27;django.contrib.contenttypes&#x27;,</span><br><span class="language-xml">    &#x27;django.contrib.sessions&#x27;,</span><br><span class="language-xml">    &#x27;django.contrib.messages&#x27;,</span><br><span class="language-xml">    &#x27;django.contrib.staticfiles&#x27;,</span><br><span class="language-xml"></span><br><span class="language-xml">    # myapp  在这里加一句这个</span><br><span class="language-xml">    &#x27;blog.apps.BlogConfig&#x27; # 这个可以在应用层面（blog）的apps.py中看到</span><br><span class="language-xml">]</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="请求过程"><a href="#请求过程" class="headerlink" title="请求过程"></a>请求过程</h4><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322172523465.png" srcset="/img/loading.gif" lazyload alt="image-20250322172523465" style="zoom: 67%;" />
-
-<h2 id="五、初识DJango模型层"><a href="#五、初识DJango模型层" class="headerlink" title="五、初识DJango模型层"></a>五、初识DJango模型层</h2><h3 id="1-模型层简介"><a href="#1-模型层简介" class="headerlink" title="1.模型层简介"></a>1.模型层简介</h3><h4 id="（1）what："><a href="#（1）what：" class="headerlink" title="（1）what："></a>（1）what：</h4><ul>
-<li><p>位于DJango视图层和数据库之间</p>
+<h4 id="请求过程">请求过程</h4>
+<img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322172523465.png" srcset="/img/loading.gif" lazyload alt="image-20250322172523465" style="zoom: 67%;" />
+<h2 id="五、初识DJango模型层">五、初识DJango模型层</h2>
+<h3 id="1-模型层简介">1.模型层简介</h3>
+<h4 id="（1）what：">（1）what：</h4>
+<ul>
+<li>
+<p>位于DJango视图层和数据库之间</p>
 </li>
-<li><p><strong>实现python对象和数据库表之间的转换</strong></p>
+<li>
+<p><strong>实现python对象和数据库表之间的转换</strong></p>
 </li>
 </ul>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322173328088.png" srcset="/img/loading.gif" lazyload alt="image-20250322173328088" style="zoom:50%;" />
-
-<h4 id="（2）why："><a href="#（2）why：" class="headerlink" title="（2）why："></a>（2）why：</h4><ul>
-<li><p>屏蔽不同数据库之间的差异</p>
+<h4 id="（2）why：">（2）why：</h4>
+<ul>
+<li>
+<p>屏蔽不同数据库之间的差异</p>
 </li>
-<li><p>开发者更加专注于业务逻辑的开发</p>
+<li>
+<p>开发者更加专注于业务逻辑的开发</p>
 </li>
-<li><p>提供很多便捷工具有助于开发</p>
+<li>
+<p>提供很多便捷工具有助于开发</p>
 </li>
 </ul>
-<h4 id="（3）how——模型层的配置"><a href="#（3）how——模型层的配置" class="headerlink" title="（3）how——模型层的配置"></a>（3）how——模型层的配置</h4><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">DATABASES = &#123;</span><br><span class="language-xml">    &#x27;default&#x27;: &#123;</span><br><span class="language-xml">        &#x27;ENGINE&#x27;: &#x27;django.db.backends.sqlite3&#x27;,</span><br><span class="language-xml">        &#x27;NAME&#x27;: BASE_DIR / &#x27;db.sqlite3&#x27;,</span><br><span class="language-xml">    &#125;</span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
-
+<h4 id="（3）how——模型层的配置">（3）how——模型层的配置</h4>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">DATABASES = &#123;</span><br><span class="language-xml">    &#x27;default&#x27;: &#123;</span><br><span class="language-xml">        &#x27;ENGINE&#x27;: &#x27;django.db.backends.sqlite3&#x27;,</span><br><span class="language-xml">        &#x27;NAME&#x27;: BASE_DIR / &#x27;db.sqlite3&#x27;,</span><br><span class="language-xml">    &#125;</span><br><span class="language-xml">&#125;</span><br></code></pre></td></tr></table></figure>
 <ul>
 <li>默认的数据库配置</li>
 </ul>
-<h3 id="2-创建博客模型"><a href="#2-创建博客模型" class="headerlink" title="2.创建博客模型"></a>2.创建博客模型</h3><h4 id="（1）设计博客模型"><a href="#（1）设计博客模型" class="headerlink" title="（1）设计博客模型"></a>（1）设计博客模型</h4><ul>
-<li><strong>确定所需内容及对应的类型</strong>：<ul>
+<h3 id="2-创建博客模型">2.创建博客模型</h3>
+<h4 id="（1）设计博客模型">（1）设计博客模型</h4>
+<ul>
+<li><strong>确定所需内容及对应的类型</strong>：
+<ul>
 <li>文章标题——文本类型</li>
 <li>文章摘要——文本类型</li>
 <li>文章内容——文本类型</li>
@@ -518,7 +544,8 @@
 </ul>
 </li>
 </ul>
-<h4 id="（2）模型层定义字段–在models-py中进行"><a href="#（2）模型层定义字段–在models-py中进行" class="headerlink" title="（2）模型层定义字段–在models.py中进行"></a>（2）模型层定义字段–在<code>models.py</code>中进行</h4><ul>
+<h4 id="（2）模型层定义字段–在models-py中进行">（2）模型层定义字段–在<code>models.py</code>中进行</h4>
+<ul>
 <li>数字类型：IntegerField</li>
 <li>文本类型：TextField</li>
 <li>日期类型：DateTimeField</li>
@@ -526,159 +553,186 @@
 <li>主键定义：primary_key属性</li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">from django.db import models</span><br><span class="language-xml"></span><br><span class="language-xml"># Create your models here.</span><br><span class="language-xml"></span><br><span class="language-xml">class Article(models.Model):</span><br><span class="language-xml">    # 文章的唯一ID</span><br><span class="language-xml">    article_id = models.AutoField(primary_key=True)</span><br><span class="language-xml">    # 文章标题</span><br><span class="language-xml">    title = models.TextField()</span><br><span class="language-xml">    # 文章摘要</span><br><span class="language-xml">    brief_content = models.TextField()</span><br><span class="language-xml">    # 文章的主要内容</span><br><span class="language-xml">    content = models.TextField()</span><br><span class="language-xml">    # 文章的发布日期——未指定的话就默认以当前的时间为发布日期</span><br><span class="language-xml">    publish_date = models.DateTimeField(auto_now=True)</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="（3）创建模型变更的迁移文件"><a href="#（3）创建模型变更的迁移文件" class="headerlink" title="（3）创建模型变更的迁移文件"></a>（3）创建模型变更的迁移文件</h4><p>在terminal：调用对应的命令</p>
+<h4 id="（3）创建模型变更的迁移文件">（3）创建模型变更的迁移文件</h4>
+<p>在terminal：调用对应的命令</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs CMD">python manage.py makemigrations<br></code></pre></td></tr></table></figure>
-
 <p>响应如下：</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322181842991.png" srcset="/img/loading.gif" lazyload alt="image-20250322181842991"></p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322181842991.png" srcset="/img/loading.gif" lazyload alt="image-20250322181842991"></p>
 <p>——已经在<code>migrations</code>文件目录下创建了<code>0001_initial.py</code>的文件</p>
-<h4 id="（4）将模型及迁移文件同步到数据库中"><a href="#（4）将模型及迁移文件同步到数据库中" class="headerlink" title="（4）将模型及迁移文件同步到数据库中"></a>（4）将模型及迁移文件同步到数据库中</h4><p>运行指令：</p>
+<h4 id="（4）将模型及迁移文件同步到数据库中">（4）将模型及迁移文件同步到数据库中</h4>
+<p>运行指令：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs CMD">python manage.py migrate<br></code></pre></td></tr></table></figure>
-
 <p>响应如下：</p>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322182131544.png" srcset="/img/loading.gif" lazyload alt="image-20250322182131544" style="zoom:67%;" />
-
 <p><strong>此时使用的是默认的Sqlite3数据库</strong>（为了简单，跳过设置MySQL数据库那些步骤</p>
-<h3 id="3-初识DJango-Shell"><a href="#3-初识DJango-Shell" class="headerlink" title="3.初识DJango Shell"></a>3.初识DJango Shell</h3><h4 id="（1）what"><a href="#（1）what" class="headerlink" title="（1）what"></a>（1）what</h4><ul>
+<h3 id="3-初识DJango-Shell">3.初识DJango Shell</h3>
+<h4 id="（1）what">（1）what</h4>
+<ul>
 <li>python Shell：用于交互式的python编程</li>
 <li>DJango Shell：与Python Shell类似，继承DJango项目环境</li>
 </ul>
-<h4 id="（2）why——方便开发、调试、debug"><a href="#（2）why——方便开发、调试、debug" class="headerlink" title="（2）why——方便开发、调试、debug"></a>（2）why——方便开发、调试、debug</h4><ul>
+<h4 id="（2）why——方便开发、调试、debug">（2）why——方便开发、调试、debug</h4>
+<ul>
 <li>临时性操作使用DJango Shell更方便（不用新建应用）</li>
 <li>小范围debug更简单，不需要运行整个项目来测试</li>
 </ul>
-<h4 id="（3）how"><a href="#（3）how" class="headerlink" title="（3）how"></a>（3）how</h4><ul>
+<h4 id="（3）how">（3）how</h4>
+<ul>
 <li>运行下列指令进入DJango Shell：</li>
 </ul>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs CMD">python manage.py shell<br></code></pre></td></tr></table></figure>
-
 <p>响应如下：</p>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322183650296.png" srcset="/img/loading.gif" lazyload alt="image-20250322183650296" style="zoom:67%;" />
-
 <ul>
 <li>输入如下指令</li>
 </ul>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs cmd">&gt;&gt;&gt; from blog.models import Article # 引入模型<br>&gt;&gt;&gt; a = Article() # 新建一篇文章<br>&gt;&gt;&gt; a.<span class="hljs-built_in">title</span> = &#x27;Test django shell&#x27; # 定义标题<br>&gt;&gt;&gt; a.brief_content = &#x27;Test django shell by dongdongqiang teacher.&#x27;  # 定义摘要<br>&gt;&gt;&gt; a.content = &#x27;Test django shell,new article,main content.&#x27;  # 定义文章内容<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; <span class="hljs-built_in">print</span>(a) # 打印文章<br>Article object (None)  # 响应（None）：未保存到数据库中<br>&gt;&gt;&gt; a.save()  # 保存新建的文章<br>&gt;&gt;&gt; articles = Article.objects.all()  # 读取模型中保存的所有文章<br>&gt;&gt;&gt; article = article[<span class="hljs-number">0</span>]  # 读取第一篇文章（即我们刚刚新建的文章），，但是我这里articles打错了。。<br>Traceback (most recent <span class="hljs-keyword">call</span> last):<br>  File &quot;&lt;console&gt;&quot;, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;<br><span class="hljs-function">NameError: <span class="hljs-title">name</span> &#x27;<span class="hljs-title">article</span>&#x27; <span class="hljs-title">is</span> <span class="hljs-title">not</span> <span class="hljs-title">defined</span>. <span class="hljs-title">Did</span> <span class="hljs-title">you</span> <span class="hljs-title">mean</span>: &#x27;<span class="hljs-title">Article</span>&#x27;?</span><br><span class="hljs-function">&gt;&gt;&gt; <span class="hljs-title">article</span> = <span class="hljs-title">articles</span>[0]  # 正确拼写</span><br><span class="hljs-function">&gt;&gt;&gt; <span class="hljs-title">print</span>(<span class="hljs-title">article.title</span>)   # 再打印标题</span><br><span class="hljs-function"><span class="hljs-title">Test</span> <span class="hljs-title">django</span> <span class="hljs-title">shell</span>          # <span class="hljs-title">OK</span>的</span><br><span class="hljs-function">&gt;&gt;&gt; <span class="hljs-title">print</span>(<span class="hljs-title">article.brief_content</span>)  # 再试试摘要</span><br><span class="hljs-function"><span class="hljs-title">Test</span> <span class="hljs-title">django</span> <span class="hljs-title">shell</span> <span class="hljs-title">by</span> <span class="hljs-title">dongdongqiang</span> <span class="hljs-title">teacher</span>.  # 也<span class="hljs-title">OK</span>，就这样了</span><br></code></pre></td></tr></table></figure>
-
 <ul>
-<li><p>退出时运行:</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-keyword">exit</span>()<br></code></pre></td></tr></table></figure></li>
+<li>
+<p>退出时运行:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-keyword">exit</span>()<br></code></pre></td></tr></table></figure>
+</li>
 </ul>
-<h3 id="4-初识DJango-Admin模块"><a href="#4-初识DJango-Admin模块" class="headerlink" title="4.初识DJango Admin模块"></a>4.初识DJango Admin模块</h3><h4 id="（1）what-1"><a href="#（1）what-1" class="headerlink" title="（1）what"></a>（1）what</h4><ul>
+<h3 id="4-初识DJango-Admin模块">4.初识DJango Admin模块</h3>
+<h4 id="（1）what-2">（1）what</h4>
+<ul>
 <li><strong>DJango的后台管理工具</strong></li>
 <li>读取定义的模型元数据，提供强大的管理使用页面</li>
 </ul>
-<h4 id="（2）why"><a href="#（2）why" class="headerlink" title="（2）why"></a>（2）why</h4><ul>
+<h4 id="（2）why">（2）why</h4>
+<ul>
 <li>最直接的：DJango Shell新增文章太复杂了（3中的操作）</li>
 <li><strong>管理页面</strong>是基础设施中重要的部分</li>
 <li>认证用户、显示管理模型、校验输入等功能类似</li>
 </ul>
-<h4 id="（3）how-1"><a href="#（3）how-1" class="headerlink" title="（3）how"></a>（3）how</h4><ul>
+<h4 id="（3）how-2">（3）how</h4>
+<ul>
 <li><strong>创建管理员用户</strong></li>
 </ul>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">python manage.py createsuperuser<br></code></pre></td></tr></table></figure>
-
 <p>响应如下：</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322185646952.png" srcset="/img/loading.gif" lazyload alt="image-20250322185646952"></p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322185646952.png" srcset="/img/loading.gif" lazyload alt="image-20250322185646952"></p>
 <p>输入用户名和密码**（不会显示出来，所以不要疑惑地重输好多遍，放心大胆地输入就完了）**即可，email address可以不写</p>
 <ul>
-<li><p><strong>登录页面进行管理</strong></p>
+<li>
+<p><strong>登录页面进行管理</strong></p>
 <ul>
-<li><p>输入：</p>
+<li>
+<p>输入：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">python manage.py runserver<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>进入admin界面——直接在URL上定向到admin</p>
+<li>
+<p>进入admin界面——直接在URL上定向到admin</p>
 </li>
-<li><p>响应如下：</p>
+<li>
+<p>响应如下：</p>
 </li>
-<li><p>输入刚刚superuser的用户名和密码登录即可</p>
+<li>
+<p>输入刚刚superuser的用户名和密码登录即可</p>
 </li>
-<li><p>![](C:\Users\Lenovo\Pictures\Screenshots\屏幕截图 2025-03-22 185942.png)</p>
+<li>
+<p>![](C:\Users\Lenovo\Pictures\Screenshots\屏幕截图 2025-03-22 185942.png)</p>
 </li>
-<li><p>此时 只有users和groups可以管理——<strong>那刚刚新建的博客文章呢？</strong></p>
+<li>
+<p>此时 只有users和groups可以管理——<strong>那刚刚新建的博客文章呢？</strong></p>
 </li>
-<li><p><strong>该博客未注册到admin中</strong></p>
+<li>
+<p><strong>该博客未注册到admin中</strong></p>
 </li>
-<li><p>点击进入**<code>admin.py</code>**</p>
+<li>
+<p>点击进入**<code>admin.py</code>**</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">from django.contrib import admin</span><br><span class="language-xml"></span><br><span class="language-xml"># Register your models here.</span><br><span class="language-xml"></span><br><span class="language-xml"># 从模型中引入定义好的Article模型</span><br><span class="language-xml">from .models import Article</span><br><span class="language-xml"></span><br><span class="language-xml"># 将Article注册到admin中</span><br><span class="language-xml">admin.site.register(Article)</span><br></code></pre></td></tr></table></figure>
 </li>
-<li><p>之后便可以在网页中看到：</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322191352406.png" srcset="/img/loading.gif" lazyload alt="image-20250322191352406"></p>
+<li>
+<p>之后便可以在网页中看到：</p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322191352406.png" srcset="/img/loading.gif" lazyload alt="image-20250322191352406"></p>
 </li>
-<li><p>点击<code>articles</code>即可看到我们新建的文章，也可以直接在此界面新建另一篇。</p>
+<li>
+<p>点击<code>articles</code>即可看到我们新建的文章，也可以直接在此界面新建另一篇。</p>
 </li>
-<li><p><strong>但是，文章均以<code>article(编号)</code>的形式显示，无法根据题目判断文章</strong></p>
+<li>
+<p><strong>但是，文章均以<code>article(编号)</code>的形式显示，无法根据题目判断文章</strong></p>
 </li>
-<li><p>进入**<code>models.py</code>**，重新定义一个新函数来解决这个问题（在原先模型定义的基础上）</p>
+<li>
+<p>进入**<code>models.py</code>**，重新定义一个新函数来解决这个问题（在原先模型定义的基础上）</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">def __str__(self):</span><br><span class="language-xml">    return self.title</span><br></code></pre></td></tr></table></figure>
-
 <p>响应如下：</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322192053283.png" srcset="/img/loading.gif" lazyload alt="image-20250322192053283"></p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322192053283.png" srcset="/img/loading.gif" lazyload alt="image-20250322192053283"></p>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="5-实现博客数据返回页面"><a href="#5-实现博客数据返回页面" class="headerlink" title="5.实现博客数据返回页面"></a>5.实现博客数据返回页面</h3><h4 id="（1）视图"><a href="#（1）视图" class="headerlink" title="（1）视图"></a>（1）视图</h4><ul>
+<h3 id="5-实现博客数据返回页面">5.实现博客数据返回页面</h3>
+<h4 id="（1）视图">（1）视图</h4>
+<ul>
 <li>**<code>views.py</code>**中定义如下函数：</li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">def article_content(request):</span><br><span class="language-xml">    article = Article.objects.all()[0]</span><br><span class="language-xml">    title = article.title</span><br><span class="language-xml">    brief_content = article.brief_content</span><br><span class="language-xml">    content = article.content</span><br><span class="language-xml">    article_id = article.article_id</span><br><span class="language-xml">    publish_date = article.publish_date</span><br><span class="language-xml">    return_str = &#x27;title:%s,brief_content:%s,&#x27;\</span><br><span class="language-xml">            &#x27;content:%s,article_id:%s,publish_date:%s&#x27; % (title,</span><br><span class="language-xml">                                                        brief_content,</span><br><span class="language-xml">                                                        content,</span><br><span class="language-xml">                                                        article_id,</span><br><span class="language-xml">                                                        publish_date)</span><br><span class="language-xml">    return HttpResponse(return_str)</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="（2）配置路由"><a href="#（2）配置路由" class="headerlink" title="（2）配置路由"></a>（2）配置路由</h4><ul>
-<li><p><strong>先应用层面</strong>：</p>
+<h4 id="（2）配置路由">（2）配置路由</h4>
+<ul>
+<li>
+<p><strong>先应用层面</strong>：</p>
 <p><strong><code>urls.py</code></strong>：添加如下命令（即最终路径指向content，就转发到视图里的article_content函数）</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml">path(&#x27;content&#x27;,views.article_content)</span><br></code></pre></td></tr></table></figure>
 </li>
-<li><p><strong>项目层面</strong>：之前已经配置过<code>blog</code>，现在无须改动</p>
+<li>
+<p><strong>项目层面</strong>：之前已经配置过<code>blog</code>，现在无须改动</p>
 </li>
 </ul>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322193648122.png" srcset="/img/loading.gif" lazyload alt="image-20250322193648122" style="zoom: 67%;" />
-
-<h4 id="（3）在浏览器中查看"><a href="#（3）在浏览器中查看" class="headerlink" title="（3）在浏览器中查看"></a>（3）在浏览器中查看</h4><p>URL：<code>[127.0.0.1:8000/blog/content]</code>(<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/blog/content)%60">http://127.0.0.1:8000/blog/content)`</a></p>
-<h2 id="六、初识DJango视图与模板"><a href="#六、初识DJango视图与模板" class="headerlink" title="六、初识DJango视图与模板"></a>六、初识DJango视图与模板</h2><h3 id="1-使用Bootstrap实现静态博客界面"><a href="#1-使用Bootstrap实现静态博客界面" class="headerlink" title="1.使用Bootstrap实现静态博客界面"></a>1.使用Bootstrap实现静态博客界面</h3><h4 id="（1）页面布局设计"><a href="#（1）页面布局设计" class="headerlink" title="（1）页面布局设计"></a>（1）页面布局设计</h4><ul>
+<h4 id="（3）在浏览器中查看">（3）在浏览器中查看</h4>
+<p>URL：<code>[127.0.0.1:8000/blog/content]</code>(<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/blog/content">http://127.0.0.1:8000/blog/content</a>)`</p>
+<h2 id="六、初识DJango视图与模板">六、初识DJango视图与模板</h2>
+<h3 id="1-使用Bootstrap实现静态博客界面">1.使用Bootstrap实现静态博客界面</h3>
+<h4 id="（1）页面布局设计">（1）页面布局设计</h4>
+<ul>
 <li>博客首页</li>
 </ul>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322203141394.png" srcset="/img/loading.gif" lazyload alt="image-20250322203141394"></p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250322203141394.png" srcset="/img/loading.gif" lazyload alt="image-20250322203141394"></p>
 <ul>
 <li>博客文章详情页</li>
 </ul>
 <img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250322195259601.png" srcset="/img/loading.gif" lazyload alt="image-20250322195259601" style="zoom:67%;" />
-
-
-
-<h4 id="（2）Bootstrap以及Bootstrap栅格系统"><a href="#（2）Bootstrap以及Bootstrap栅格系统" class="headerlink" title="（2）Bootstrap以及Bootstrap栅格系统"></a>（2）Bootstrap以及Bootstrap栅格系统</h4><ul>
+<h4 id="（2）Bootstrap以及Bootstrap栅格系统">（2）Bootstrap以及Bootstrap栅格系统</h4>
+<ul>
 <li>美国Twitter的前端框架</li>
 </ul>
-<h4 id="（3）实现静态页面"><a href="#（3）实现静态页面" class="headerlink" title="（3）实现静态页面"></a>（3）实现静态页面</h4><ul>
+<h4 id="（3）实现静态页面">（3）实现静态页面</h4>
+<ul>
 <li><strong>新建一个<code>templates.py</code>目录，用于存放HTML文件</strong></li>
 <li>然后写HTML文件就行</li>
 </ul>
-<h3 id="2-初识DJango的模板系统"><a href="#2-初识DJango的模板系统" class="headerlink" title="2.初识DJango的模板系统"></a>2.初识DJango的模板系统</h3><h4 id="（1）为什么用模板系统"><a href="#（1）为什么用模板系统" class="headerlink" title="（1）为什么用模板系统"></a>（1）为什么用模板系统</h4><ul>
+<h3 id="2-初识DJango的模板系统">2.初识DJango的模板系统</h3>
+<h4 id="（1）为什么用模板系统">（1）为什么用模板系统</h4>
+<ul>
 <li>视图文件不适合编码HTML</li>
 <li>网页逻辑和网页视图应该分开设计</li>
 </ul>
-<h4 id="（2）模板系统简介"><a href="#（2）模板系统简介" class="headerlink" title="（2）模板系统简介"></a>（2）模板系统简介</h4><ul>
+<h4 id="（2）模板系统简介">（2）模板系统简介</h4>
+<ul>
 <li>模板系统的表现形式是文本</li>
 <li>分离文档的表现形式和表现内容</li>
 <li>模板系统定义了特有的标签占位符</li>
 </ul>
-<h4 id="（3）基本语法"><a href="#（3）基本语法" class="headerlink" title="（3）基本语法"></a>（3）基本语法</h4><ul>
+<h4 id="（3）基本语法">（3）基本语法</h4>
+<ul>
 <li><strong>变量标签</strong>：<strong><code>&#123;&#123;变量&#125;&#125;</code></strong></li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs DJango"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span></span><br><span class="language-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></span><br><span class="language-xml">        </span><span class="hljs-template-variable">&#123;&#123;now&#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span><br><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>for循环标签</strong>：<strong><code>&#123;%for x in list %&#125;,&#123;% endfor %&#125;</code></strong></li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span></span><br><span class="language-xml">    </span><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">for</span></span> item <span class="hljs-keyword">in</span> list %&#125;</span><span class="language-xml"></span><br><span class="language-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span></span><span class="hljs-template-variable">&#123;&#123;item&#125;&#125;</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span><br><span class="language-xml">    </span><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %&#125;</span><span class="language-xml"></span><br><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>if-else分支标签</strong>：<strong><code>&#123;% if %&#125;,&#123;% else %&#125;,&#123;% endif %&#125;</code></strong></li>
 </ul>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">if</span></span> true %&#125;</span><span class="language-xml"></span><br><span class="language-xml">  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><br><span class="language-xml">      it is a true part.</span><br><span class="language-xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="language-xml"></span><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">else</span></span> %&#125;</span><span class="language-xml"></span><br><span class="language-xml">  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><br><span class="language-xml">      it is a false part.</span><br><span class="language-xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="language-xml"></span><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">endif</span></span> %&#125;</span><br></code></pre></td></tr></table></figure>
-
 <p><em><strong>这里，我们在<code>templates.py</code>目录下新建了一个<code>template.html</code>文件，并使用了上述基本语法编写该文件，但因为未与视图文件等等相连接，点开浏览器对应网页我们只能看到源码类型的content，并不能看到功能实现后的样子</strong></em></p>
-<h3 id="3-使用模板系统渲染博客界面"><a href="#3-使用模板系统渲染博客界面" class="headerlink" title="3.使用模板系统渲染博客界面"></a>3.使用模板系统渲染博客界面</h3><h3 id="4-实现文章详情页面跳转"><a href="#4-实现文章详情页面跳转" class="headerlink" title="4.实现文章详情页面跳转"></a>4.实现文章详情页面跳转</h3><h3 id="5-实现上下篇文章跳转"><a href="#5-实现上下篇文章跳转" class="headerlink" title="5.实现上下篇文章跳转"></a>5.实现上下篇文章跳转</h3><h3 id="6-实现分页功能"><a href="#6-实现分页功能" class="headerlink" title="6.实现分页功能"></a>6.实现分页功能</h3>
+<h3 id="3-使用模板系统渲染博客界面">3.使用模板系统渲染博客界面</h3>
+<h3 id="4-实现文章详情页面跳转">4.实现文章详情页面跳转</h3>
+<h3 id="5-实现上下篇文章跳转">5.实现上下篇文章跳转</h3>
+<h3 id="6-实现分页功能">6.实现分页功能</h3>
+
                 
               </div>
             
