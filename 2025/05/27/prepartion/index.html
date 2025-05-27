@@ -22,22 +22,23 @@
   <meta name="author" content="Delta">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Hexo 博客中配置 Emoji 表情显示（适用于 Fluid 主题） 在 Hexo 博客中，如果你想通过 markdown 的 &lt;span class&#x3D;&quot;emoji&quot; alias&#x3D;&quot;smile&quot; style&#x3D;&quot;&quot; fallback-src&#x3D;&quot;https:&#x2F;&#x2F;github.githubassets.com&#x2F;images&#x2F;">
+    <meta name="description" content="目标掌握框架：  [ ] Gin [ ] Gorm   在这之前要学习的基础知识：   [x] ### 1.开发环境搭建——文件体系——src&#x2F;pkg&#x2F;bin   [ ] ### 2.Go基础知识   [ ] go程序的一般结构   [ ] Go内置关键字和注释方法   [ ] 包的导入   [ ] package别名与省略调用   [ ] 可见性规则——大写   [ ] ### 3.类型与变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo主题中配置emoji显示">
-<meta property="og:url" content="http://example.com/2025/05/24/hexo%E4%B8%BB%E9%A2%98%E4%B8%AD%E9%85%8D%E7%BD%AEemoji%E6%98%BE%E7%A4%BA/index.html">
+<meta property="og:title" content="prepartion">
+<meta property="og:url" content="http://example.com/2025/05/27/prepartion/index.html">
 <meta property="og:site_name" content="Delta">
-<meta property="og:description" content="Hexo 博客中配置 Emoji 表情显示（适用于 Fluid 主题） 在 Hexo 博客中，如果你想通过 markdown 的 &lt;span class&#x3D;&quot;emoji&quot; alias&#x3D;&quot;smile&quot; style&#x3D;&quot;&quot; fallback-src&#x3D;&quot;https:&#x2F;&#x2F;github.githubassets.com&#x2F;images&#x2F;">
+<meta property="og:description" content="目标掌握框架：  [ ] Gin [ ] Gorm   在这之前要学习的基础知识：   [x] ### 1.开发环境搭建——文件体系——src&#x2F;pkg&#x2F;bin   [ ] ### 2.Go基础知识   [ ] go程序的一般结构   [ ] Go内置关键字和注释方法   [ ] 包的导入   [ ] package别名与省略调用   [ ] 可见性规则——大写   [ ] ### 3.类型与变量">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-05-24T13:04:32.000Z">
-<meta property="article:modified_time" content="2025-05-24T13:16:24.551Z">
+<meta property="article:published_time" content="2025-05-27T02:52:52.000Z">
+<meta property="article:modified_time" content="2025-05-27T03:54:31.169Z">
 <meta property="article:author" content="Delta">
-<meta property="article:tag" content="教程分享">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="go">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>hexo主题中配置emoji显示 - Delta</title>
+  <title>prepartion - Delta</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -237,7 +238,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="hexo主题中配置emoji显示"></span>
+            <span id="subtitle" data-typed-text="prepartion"></span>
           
         </div>
 
@@ -248,8 +249,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-24 21:04" pubdate>
-          2025年5月24日 晚上
+        <time datetime="2025-05-27 10:52" pubdate>
+          2025年5月27日 上午
         </time>
       </span>
     
@@ -260,7 +261,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          359 字
+          463 字
         
       </span>
     
@@ -271,7 +272,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -317,12 +318,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">hexo主题中配置emoji显示</h1>
+            <h1 id="seo-header">prepartion</h1>
             
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-05-24T21:16:24+08:00
+                    本文最后更新于 2025-05-27T11:54:31+08:00
                   
                   
 
@@ -332,36 +333,263 @@
             
               <div class="markdown-body">
                 
-                <h2 id="hexo-博客中配置-emoji-表情显示适用于-fluid-主题"><a class="markdownIt-Anchor" href="#hexo-博客中配置-emoji-表情显示适用于-fluid-主题"></a> Hexo 博客中配置 Emoji 表情显示（适用于 Fluid 主题）</h2>
-<p>在 Hexo 博客中，如果你想通过 markdown 的 <code>&lt;span class=&quot;emoji&quot; alias=&quot;smile&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8&quot;&gt;&amp;#x1f604;&lt;/span&gt;</code> 语法来插入 emoji 表情，可以按照以下步骤进行配置。本教程以<strong>我使用的 Fluid 主题</strong>为例，进行配置。</p>
-<h3 id="1卸载默认的-markdown-渲染器"><a class="markdownIt-Anchor" href="#1卸载默认的-markdown-渲染器"></a> 1.卸载默认的 Markdown 渲染器</h3>
-<p>Hexo 默认使用 <code>hexo-renderer-marked</code> 渲染器，它不支持 emoji 插件，因此我们要换成增强版的 <code>hexo-renderer-markdown-it-plus</code>。</p>
-<p>在博客根目录打开终端，运行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm uninstall hexo-renderer-markdown-it<br></code></pre></td></tr></table></figure>
-<h3 id="2安装增强版渲染器及插件支持"><a class="markdownIt-Anchor" href="#2安装增强版渲染器及插件支持"></a> 2.安装增强版渲染器及插件支持</h3>
-<p>继续在终端中输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-renderer-markdown-it-plus --save<br></code></pre></td></tr></table></figure>
-<h3 id="3在-_configyml-中添加-emoji-插件配置"><a class="markdownIt-Anchor" href="#3在-_configyml-中添加-emoji-插件配置"></a> 3.在 <code>_config.yml</code> 中添加 emoji 插件配置</h3>
-<p>打开 Hexo 根目录下的 <code>_config.yml</code> 文件，添加如下配置（可以放在文件末尾）：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">markdown_it_plus:</span><br>  <span class="hljs-attr">highlight:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">html:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">xhtmlOut:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">breaks:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">linkify:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">typographer:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">plugins:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">plugin:</span><br>        <span class="hljs-attr">name:</span> <span class="hljs-string">markdown-it-emoji</span><br></code></pre></td></tr></table></figure>
-<p><strong>注意：</strong></p>
+                <h2 id="目标掌握框架"><a class="markdownIt-Anchor" href="#目标掌握框架"></a> 目标掌握框架：</h2>
 <ul>
-<li>确保缩进正确，否则会导致 Hexo 报错。</li>
-<li>如果你之前配置过 <code>markdown:</code> 字段，请删除它。</li>
+<li>[ ] <strong><code>Gin</code></strong></li>
+<li>[ ] <strong><code>Gorm</code></strong></li>
 </ul>
-<h3 id="4清除缓存并重新生成部署"><a class="markdownIt-Anchor" href="#4清除缓存并重新生成部署"></a> 4.清除缓存并重新生成部署</h3>
-<p>在终端中运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g -d<br></code></pre></td></tr></table></figure>
-<h3 id="5写一篇测试博文试试看"><a class="markdownIt-Anchor" href="#5写一篇测试博文试试看"></a> 5.写一篇测试博文试试看！</h3>
-<p>在你的 <code>.md</code> 文件中加入如下语法：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-title class_">Hello</span> <span class="hljs-title class_">Emoji</span>! <span class="hljs-symbol">:smile</span>: <span class="hljs-symbol">:heart</span>: <span class="hljs-symbol">:rocket</span><span class="hljs-symbol">:</span><br></code></pre></td></tr></table></figure>
-<p>如果配置成功，则会显示如下：</p>
-<p>Hello Emoji! <span class="emoji" alias="smile" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span> <span class="emoji" alias="heart" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8">❤</span> <span class="emoji" alias="rocket" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8">🚀</span></p>
-<h3 id="示例效果"><a class="markdownIt-Anchor" href="#示例效果"></a> 示例效果</h3>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs elixir">我今天好开心！<span class="hljs-symbol">:blush</span>:<br>坚持梦想！<span class="hljs-symbol">:muscle</span>: <span class="hljs-symbol">:star</span><span class="hljs-symbol">:</span><br></code></pre></td></tr></table></figure>
-<p>渲染后就是：</p>
-<p>我今天好开心！😊<br>
-坚持梦想！💪 ⭐</p>
+<h2 id="在这之前要学习的基础知识"><a class="markdownIt-Anchor" href="#在这之前要学习的基础知识"></a> 在这之前要学习的基础知识：</h2>
+<ul>
+<li>
+<p>[x] ### 1.开发环境搭建——文件体系——<code>src</code>/<code>pkg</code>/<code>bin</code></p>
+</li>
+<li>
+<p>[ ] ### 2.Go基础知识</p>
+</li>
+<li>
+<p>[ ] go程序的一般结构</p>
+</li>
+<li>
+<p>[ ] Go内置关键字和注释方法</p>
+</li>
+<li>
+<p>[ ] 包的导入</p>
+</li>
+<li>
+<p>[ ] package别名与省略调用</p>
+</li>
+<li>
+<p>[ ] 可见性规则——大写</p>
+</li>
+<li>
+<p>[ ] ### 3.类型与变量</p>
+</li>
+<li>
+<p>[ ] 基本类型</p>
+</li>
+<li>
+<p>[ ] 类型零值</p>
+</li>
+<li>
+<p>[ ] 类型别名</p>
+</li>
+<li>
+<p>[ ] 变量的声明与赋值</p>
+</li>
+<li>
+<p>[ ] 类型转换</p>
+</li>
+<li>
+<p>[ ] ### 4.常量与运算符</p>
+</li>
+<li>
+<p>[ ] 常量定义</p>
+</li>
+<li>
+<p>[ ] 常量枚举</p>
+</li>
+<li>
+<p>[ ] 运算符</p>
+</li>
+<li>
+<p>[ ] ### 5.控制语句</p>
+</li>
+<li>
+<p>[ ] 基础知识补充（指针、递增递减语句）</p>
+</li>
+<li>
+<p>[ ] if判断</p>
+</li>
+<li>
+<p>[ ] for循环</p>
+</li>
+<li>
+<p>[ ] switch选择</p>
+</li>
+<li>
+<p>[ ] 跳转</p>
+</li>
+<li>
+<p>[ ] ### 6.数组<code>array</code></p>
+</li>
+<li>
+<p>[ ] 定义</p>
+</li>
+<li>
+<p>[ ] 指向数组的指针 &amp; 指针数组</p>
+</li>
+<li>
+<p>[ ] 数组间的比较</p>
+</li>
+<li>
+<p>[ ] 使用new创建数组</p>
+</li>
+<li>
+<p>[ ] 多维数据</p>
+</li>
+<li>
+<p>[ ] 冒泡排序</p>
+</li>
+<li>
+<p>[ ] ### 7.切片<code>slice</code></p>
+</li>
+<li>
+<p>[ ] 定义</p>
+</li>
+<li>
+<p>[ ] 创建</p>
+</li>
+<li>
+<p>[ ] <code>reslice</code>定义</p>
+</li>
+<li>
+<p>[ ] <code>append()</code>与<code>slice</code></p>
+</li>
+<li>
+<p>[ ] <code>copy()</code>与<code>slice</code></p>
+</li>
+<li>
+<p>[ ] ### 8.<code>map</code>（映射）</p>
+</li>
+<li>
+<p>[ ] 定义</p>
+</li>
+<li>
+<p>[ ] 简单<code>map</code>的创建 &amp; 使用</p>
+</li>
+<li>
+<p>[ ] 复杂<code>map</code>的键值对操作</p>
+</li>
+<li>
+<p>[ ] <code>map</code>与<code>slice</code>的迭代操作</p>
+</li>
+<li>
+<p>[ ] 元素类型为<code>map</code>的<code>slice</code></p>
+</li>
+<li>
+<p>[ ] <code>map</code>的间接排序</p>
+</li>
+<li>
+<p>[ ] ### 9.函数<code>function</code></p>
+</li>
+<li>
+<p>[ ] 定义 &amp; 使用</p>
+</li>
+<li>
+<p>[ ] 不定长变参</p>
+</li>
+<li>
+<p>[ ] 传递值类型 &amp; 引用类型</p>
+</li>
+<li>
+<p>[ ] 匿名函数 &amp; 闭包</p>
+</li>
+<li>
+<p>[ ] <code>defer</code></p>
+</li>
+<li>
+<p>[ ] <code>panic</code> &amp; <code>recover</code></p>
+</li>
+<li>
+<p>[ ] ### 10.结构<code>struct</code></p>
+</li>
+<li>
+<p>[ ] 定义 &amp; 使用</p>
+</li>
+<li>
+<p>[ ] 使用字面量初始化</p>
+</li>
+<li>
+<p>[ ] 匿名结构与字段</p>
+</li>
+<li>
+<p>[ ] 结构间的赋值与比较</p>
+</li>
+<li>
+<p>[ ] 嵌入结构</p>
+</li>
+<li>
+<p>[ ] ### 11.方法<code>meyhod</code></p>
+</li>
+<li>
+<p>[ ] 声明 &amp; 使用</p>
+</li>
+<li>
+<p>[ ] 类型别名与方法</p>
+</li>
+<li>
+<p>[ ] <code>Method Value</code> &amp; <code>Method Experssion</code></p>
+</li>
+<li>
+<p>[ ] 方法名称冲突与字段访问权限</p>
+</li>
+<li>
+<p>[ ] ### 12.接口<code>interface</code></p>
+</li>
+<li>
+<p>[ ] 定义 &amp; 基本操作</p>
+</li>
+<li>
+<p>[ ] 嵌入接口</p>
+</li>
+<li>
+<p>[ ] 类型断言</p>
+</li>
+<li>
+<p>[ ] 空接口 &amp; <code>type switch</code></p>
+</li>
+<li>
+<p>[ ] 接口转换</p>
+</li>
+<li>
+<p>[ ] 注意事项</p>
+</li>
+<li>
+<p>[ ] ### 13.反射<code>reflection</code></p>
+</li>
+<li>
+<p>[ ] 基本操作</p>
+</li>
+<li>
+<p>[ ] 反射匿名或嵌入字段</p>
+</li>
+<li>
+<p>[ ] 修改目标对象</p>
+</li>
+<li>
+<p>[ ] 动态调用方法</p>
+</li>
+<li>
+<p>[ ] ### 14.并发<code>concurrency</code></p>
+</li>
+<li>
+<p>[ ] <code>goroutine</code>初识</p>
+</li>
+<li>
+<p>[ ] <code>channel</code>概述</p>
+</li>
+<li>
+<p>[ ] 多个<code>goroutine</code>打印</p>
+</li>
+<li>
+<p>[ ] <code>select</code>概述</p>
+</li>
+<li>
+<p>[ ] ### 15.项目与坑</p>
+</li>
+<li>
+<p>[ ] 完整项目结构</p>
+</li>
+<li>
+<p>[ ] <code>slice</code> &amp; <code>append</code> 的坑</p>
+</li>
+<li>
+<p>[ ] <code>time.Format</code> 的坑</p>
+</li>
+<li>
+<p>[ ] <code>time</code> 的坑</p>
+</li>
+</ul>
 
                 
               </div>
@@ -374,7 +602,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/" class="print-no-link">#教程分享</a>
+        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="print-no-link">#学习笔记</a>
+      
+        <a href="/tags/go/" class="print-no-link">#go</a>
       
     </div>
   
@@ -386,8 +616,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>hexo主题中配置emoji显示</div>
-      <div>http://example.com/2025/05/24/hexo主题中配置emoji显示/</div>
+      <div>prepartion</div>
+      <div>http://example.com/2025/05/27/prepartion/</div>
     </div>
     <div class="license-meta">
       
@@ -399,13 +629,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月24日</div>
+          <div>2025年5月27日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2025年5月24日</div>
+          <div>2025年5月27日</div>
         </div>
       
       
@@ -436,18 +666,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/05/27/prepartion/" title="prepartion">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">prepartion</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/05/24/%E6%A2%A6%E6%83%B3%E4%B8%AD%E7%9A%8410%E5%B9%B4%E5%90%8E/" title="梦想中的10年后">
-                        <span class="hidden-mobile">梦想中的10年后</span>
+                      <a href="/2025/05/24/hexo%E4%B8%BB%E9%A2%98%E4%B8%AD%E9%85%8D%E7%BD%AEemoji%E6%98%BE%E7%A4%BA/" title="hexo主题中配置emoji显示">
+                        <span class="hidden-mobile">hexo主题中配置emoji显示</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
