@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://example.com/2025/05/14/go-beginning-250514/6.png">
 <meta property="og:image" content="http://example.com/2025/05/14/go-beginning-250514/7.png">
 <meta property="article:published_time" content="2025-05-14T03:06:03.000Z">
-<meta property="article:modified_time" content="2025-05-24T13:23:13.127Z">
+<meta property="article:modified_time" content="2025-05-29T01:53:30.258Z">
 <meta property="article:author" content="Delta">
 <meta property="article:tag" content="go">
 <meta property="article:tag" content="language">
@@ -270,7 +270,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8.5k 字
+          9.1k 字
         
       </span>
     
@@ -281,7 +281,7 @@
         
         
         
-          71 分钟
+          76 分钟
         
       </span>
     
@@ -332,7 +332,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2025-05-24T21:23:13+08:00
+                    本文最后更新于 2025-05-29T09:53:30+08:00
                   
                   
 
@@ -1176,47 +1176,90 @@
 </li>
 <li>
 <p>为判断一个接口值是否保存了一个特定的类型，<strong>类型断言</strong>可以返回两个值：<strong>其底层值以及一个布尔值</strong>（报告断言是否成功）</p>
-<pre class="highlight"><code class="Go’">t,ok := i.(T)
-
-</code></pre>
-</li>
-</ul>
-<p>​	若<code>i</code>保存了一个<code>T</code>，那其底层值为<code>T</code>，<code>ok</code>为<code>true</code></p>
-<p>​	否则，<code>ok</code> 将为 <code>false</code> 而 <code>t</code> 将为 <code>T</code> 类型的零值，程序并不会产生 panic。</p>
-<h4 id="9类型选择"><a class="markdownIt-Anchor" href="#9类型选择"></a> 9&gt;类型选择</h4>
-<ul>
-<li>
-<p>定义：是一种按顺序从结果类型断言中选择分支的结构</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><code class="hljs Go’">  t,ok := i.(T)<br><br>​	若`i`保存了一个`T`，那其底层值为`T`，`ok`为`true`<br><br>​	否则，`ok` 将为 `false` 而 `t` 将为 `T` 类型的零值，程序并不会产生 panic。<br><br>#### 9&gt;类型选择<br><br>* 定义：是一种按顺序从结果类型断言中选择分支的结构<br><br>* **实现**：与一般的 switch 语句相似，不过**类型选择中的 case 为类型（而非值）**， 它们针对给定接口值所存储的值的类型进行比较。<br>* **声明**：与类型断言 `i.(T)` 的语法相同，只是具体类型 `T` 被替换成了**关键字 `type`**。<br><br>```<br>switch v := i.(type) &#123;<br>case T:<br>    // v 的类型为 T<br>case S:<br>    // v 的类型为 S<br>default:<br>    // 没有匹配，v 与 i 的类型相同<br>&#125;<br>```<br><br>* 此选择语句判断接口值 `i` 保存的值类型是 `T` 还是 `S`。<br>  * 在 `T` 或 `S` 的情况下，变量 `v` 会分别按 `T` 或 `S` 类型保存 `i` 拥有的值。<br>  * 在默认（即没有匹配）的情况下，变量 `v` 与 `i` 的接口类型和值相同。<br><br>#### 9&gt;`Stringer`<br><br>[`fmt`](https://go-zh.org/pkg/fmt/) 包中定义的 [`Stringer`](https://go-zh.org/pkg/fmt/#Stringer) 是最普遍的接口之一。<br><br>```<br>type Stringer interface &#123;<br>    String() string<br>&#125;<br>```<br><br>`Stringer` 是一个可以用字符串描述自己的类型。`fmt` 包（还有很多包）都通过此接口来打印值。<br><br>#### 10&gt;错误<br><br>Go 程序使用 `error` 值来表示错误状态。<br><br>与 `fmt.Stringer` 类似，`error` 类型是一个内建接口：<br><br>```<br>type error interface &#123;<br>    Error() string<br>&#125;<br>```<br><br>（与 `fmt.Stringer` 类似，`fmt` 包也会根据对 `error` 的实现来打印值。）<br><br>通常函数会返回一个 `error` 值，调用它的代码应当判断这个错误是否等于 `nil` 来进行错误处理。<br><br>```<br>i, err := strconv.Atoi(&quot;42&quot;)<br>if err != nil &#123;<br>    fmt.Printf(&quot;couldn&#x27;t convert number: %v\n&quot;, err)<br>    return<br>&#125;<br>fmt.Println(&quot;Converted integer:&quot;, i)<br>```<br><br>`error` 为 nil 时表示成功；非 nil 的 `error` 表示失败。<br><br><br><br>————》人工智能的算法<br><br>## 泛型<br><br>### 1.类型参数、泛型函数<br><br>~~~Go<br>func Index[T comparable](s []T, x T) int<br></code></pre></td></tr></table></figure>
 </li>
 <li>
-<p><strong>实现</strong>：与一般的 switch 语句相似，不过<strong>类型选择中的 case 为类型（而非值）</strong>， 它们针对给定接口值所存储的值的类型进行比较。</p>
+<p><code>[T comparable]</code>：类型参数列表——》T：类型参数的名字 <code>comparable</code>：类型约束，表示T必须满足可以比较的约束（支持<code>==</code> &amp; <code>!=</code>操作）</p>
 </li>
 <li>
-<p><strong>声明</strong>：与类型断言 <code>i.(T)</code> 的语法相同，只是具体类型 <code>T</code> 被替换成了<strong>关键字 <code>type</code></strong>。</p>
+<p><code>func Index[T comparable](s []T, x T)int</code>：</p>
+<ul>
+<li>一个泛型函数<code>Index</code></li>
+<li>函数的类型参数：<code>T</code>，满足约束<code>comparable</code></li>
+<li>接收两个参数：
+<ul>
+<li>切片<code>s []T</code>，元素类型为T的切片</li>
+<li>值<code>x T</code>，和切片元素为同类型</li>
+<li>返回值为<code>int</code>，表：索引<code>Index</code></li>
+</ul>
 </li>
 </ul>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">switch</span> v := i.(<span class="hljs-keyword">type</span>) &#123;<br><span class="hljs-keyword">case</span> T:<br>    <span class="hljs-comment">// v 的类型为 T</span><br><span class="hljs-keyword">case</span> S:<br>    <span class="hljs-comment">// v 的类型为 S</span><br><span class="hljs-keyword">default</span>:<br>    <span class="hljs-comment">// 没有匹配，v 与 i 的类型相同</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<ul>
-<li>此选择语句判断接口值 <code>i</code> 保存的值类型是 <code>T</code> 还是 <code>S</code>。
-<ul>
-<li>在 <code>T</code> 或 <code>S</code> 的情况下，变量 <code>v</code> 会分别按 <code>T</code> 或 <code>S</code> 类型保存 <code>i</code> 拥有的值。</li>
-<li>在默认（即没有匹配）的情况下，变量 <code>v</code> 与 <code>i</code> 的接口类型和值相同。</li>
-</ul>
 </li>
 </ul>
-<h4 id="9stringer"><a class="markdownIt-Anchor" href="#9stringer"></a> 9&gt;<code>Stringer</code></h4>
-<p><a target="_blank" rel="noopener" href="https://go-zh.org/pkg/fmt/"><code>fmt</code></a> 包中定义的 <a target="_blank" rel="noopener" href="https://go-zh.org/pkg/fmt/#Stringer"><code>Stringer</code></a> 是最普遍的接口之一。</p>
-<figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs elm"><span class="hljs-keyword">type</span> <span class="hljs-type">Stringer</span> interface &#123;<br>    <span class="hljs-type">String</span>() string<br>&#125;<br></code></pre></td></tr></table></figure>
-<p><code>Stringer</code> 是一个可以用字符串描述自己的类型。<code>fmt</code> 包（还有很多包）都通过此接口来打印值。</p>
-<h4 id="10错误"><a class="markdownIt-Anchor" href="#10错误"></a> 10&gt;错误</h4>
-<p>Go 程序使用 <code>error</code> 值来表示错误状态。</p>
-<p>与 <code>fmt.Stringer</code> 类似，<code>error</code> 类型是一个内建接口：</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs routeros">type <span class="hljs-built_in">error</span><span class="hljs-built_in"> interface </span>&#123;<br>    <span class="hljs-built_in">Error</span>() string<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>（与 <code>fmt.Stringer</code> 类似，<code>fmt</code> 包也会根据对 <code>error</code> 的实现来打印值。）</p>
-<p>通常函数会返回一个 <code>error</code> 值，调用它的代码应当判断这个错误是否等于 <code>nil</code> 来进行错误处理。</p>
-<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs hsp">i, <span class="hljs-keyword">err</span> := strconv.Atoi(<span class="hljs-string">&quot;42&quot;</span>)<br><span class="hljs-keyword">if</span> <span class="hljs-keyword">err</span> != nil &#123;<br>    fmt.Printf(<span class="hljs-string">&quot;couldn&#x27;t convert number: %v\n&quot;</span>, <span class="hljs-keyword">err</span>)<br>    <span class="hljs-keyword">return</span><br>&#125;<br>fmt.Println(<span class="hljs-string">&quot;Converted integer:&quot;</span>, i)<br></code></pre></td></tr></table></figure>
-<p><code>error</code> 为 nil 时表示成功；非 nil 的 <code>error</code> 表示失败。</p>
-<p>————》人工智能的算法</p>
+<h3 id="2泛型类型"><a class="markdownIt-Anchor" href="#2泛型类型"></a> 2.泛型类型</h3>
+<h4 id="1-定义-2"><a class="markdownIt-Anchor" href="#1-定义-2"></a> 1&gt; 定义</h4>
+<p>带有类型参数的结构体或类型定义</p>
+<h4 id="2基本语法"><a class="markdownIt-Anchor" href="#2基本语法"></a> 2&gt;基本语法</h4>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Go"><span class="hljs-keyword">type</span> 类型名[类型参数] <span class="hljs-keyword">struct</span>&#123;<br>    字段名 类型参数<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="并发"><a class="markdownIt-Anchor" href="#并发"></a> 并发</h2>
+<h3 id="1go协程goroutine"><a class="markdownIt-Anchor" href="#1go协程goroutine"></a> 1.Go协程<code>goroutine</code></h3>
+<p><strong>Go程<code>goroutine</code></strong>：由Go运行时管理的轻量级<strong>线程</strong></p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">go</span> f(x,y,z)<br></code></pre></td></tr></table></figure>
+<p>启动一个新的Go协程并执行<code>f(x,y,z)</code></p>
+<ul>
+<li><code>f,x,y,z</code>的求值发生在当前的Go协程中，<code>f</code>的执行发生在新的Go协程中</li>
+</ul>
+<h3 id="2信道channel"><a class="markdownIt-Anchor" href="#2信道channel"></a> 2.信道<code>channel</code></h3>
+<ul>
+<li>
+<p>带有类型的管道</p>
+</li>
+<li>
+<p>用信道操作符<code>&lt;-</code>来发送或接收值</p>
+<ul>
+<li>表示数据的流向</li>
+<li><code>ch &lt;- v</code>：发送数据v到信道ch</li>
+<li><code>v := &lt;- ch</code>：从信道ch中接收数据，赋值给变量v</li>
+</ul>
+</li>
+<li>
+<p>创建方式：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Go">ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)<br></code></pre></td></tr></table></figure>
+<ul>
+<li>使用<code>make</code>创建一个信道（同创建切片和map）</li>
+<li><code>chan int</code>表示：此信道只能传输 <code>int</code> 类型的数据</li>
+<li><strong>！！使用信道前必须创建</strong></li>
+</ul>
+</li>
+<li>
+<p>信道的“阻塞”行为</p>
+</li>
+</ul>
+<blockquote>
+<p>默认情况下，发送和接收操作在另一端准备好之前都会阻塞。</p>
+</blockquote>
+<p>也就是说：</p>
+<ul>
+<li>如果一个 goroutine 想向信道发送数据，但没有其他 goroutine 正在接收，它就会<strong>阻塞（暂停）等待</strong>。</li>
+<li>同样地，如果想接收数据，但信道中没有数据，它也会阻塞。</li>
+</ul>
+<h4 id="带缓冲的信道"><a class="markdownIt-Anchor" href="#带缓冲的信道"></a> 带缓冲的信道</h4>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs go">ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>,<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
+<ul>
+<li>这里声明的信道最多可以存储3个int类型的值</li>
+<li>发送操作在缓冲已满时阻塞</li>
+<li>接收操作在缓冲为空时阻塞</li>
+</ul>
+<p>填满缓冲区后会怎样？</p>
+<p>向一个<strong>已经满了的缓冲信道</strong>发送数据，比如这样：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs go">ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, <span class="hljs-number">2</span>)<br>ch &lt;- <span class="hljs-number">1</span>  <span class="hljs-comment">// ✅ ok</span><br>ch &lt;- <span class="hljs-number">2</span>  <span class="hljs-comment">// ✅ ok</span><br>ch &lt;- <span class="hljs-number">3</span>  <span class="hljs-comment">// ❌ 阻塞：因为缓冲已满</span><br></code></pre></td></tr></table></figure>
+<p>就会发生：</p>
+<ul>
+<li><strong>发送方会阻塞（卡住）</strong>，直到某个接收者从信道中取走了一个值，腾出了空位。</li>
+<li>如果没有接收者，发送操作会<strong>永远阻塞</strong>，最终可能导致 <strong>死锁（deadlock）</strong>。</li>
+</ul>
+<h4 id="range-close"><a class="markdownIt-Anchor" href="#range-close"></a> <code>range</code> &amp; <code>close</code></h4>
+<p>——》遍历和关闭</p>
 
                 
               </div>
@@ -1264,7 +1307,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2025年5月24日</div>
+          <div>2025年5月29日</div>
         </div>
       
       
