@@ -4,11 +4,32 @@
   
   
   <entry>
+    <title>大三第一周总结</title>
+    <link href="/2025/09/11/%E5%A4%A7%E4%B8%89%E7%AC%AC%E4%B8%80%E5%91%A8%E6%80%BB%E7%BB%93/"/>
+    <url>/2025/09/11/%E5%A4%A7%E4%B8%89%E7%AC%AC%E4%B8%80%E5%91%A8%E6%80%BB%E7%BB%93/</url>
+    
+    <content type="html"><![CDATA[<h2 id="写在前面"><a class="markdownIt-Anchor" href="#写在前面"></a> 写在前面</h2><p>大三的第一周，开始于国赛结束后的第二天。</p><p>9月7日，刚刚通宵一晚解决国赛的问题。又接上了原本没完成的暑假实践报告…</p><p>累，累上加累。当天晚上还有备受瞩目的”血月“，可惜了，我没看到，只看到了圆圆的月亮亮亮的。<span class="emoji" alias="full_moon" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f315.png?v8">🌕</span></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习笔记</tag>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>0806问题复盘</title>
     <link href="/2025/08/06/0806%E9%97%AE%E9%A2%98%E5%A4%8D%E7%9B%98/"/>
     <url>/2025/08/06/0806%E9%97%AE%E9%A2%98%E5%A4%8D%E7%9B%98/</url>
     
-    <content type="html"><![CDATA[<h2 id="遇到的问题"><a class="markdownIt-Anchor" href="#遇到的问题"></a> 遇到的问题</h2><h3 id="go环境"><a class="markdownIt-Anchor" href="#go环境"></a> Go环境</h3><p>当前遇到的问题还是Go环境没办法正常运行，也没找到问题根源所在。前几天用docker创建了一个容器来运行Go，又重新找到了那种学习的感觉。起码不用跟着敲一点代码，运行一下，等好几分钟才能看到结果。</p><p>昨天下午把基础又速通了一遍，今天早上看了一点数模的问题，下午又开始学Go。这次进入到项目实例，但是，问题就来了。容器中启动的server，没办法和主机的端口相连，并且docker容器创建好后没办法修改端口映射，意思是当前的这个容器没办法继续用了，无论如何。。。</p><p>很搞人心态啊。。。。。。。。。。。。。。但是又有一个新的解决方法，那就是在主机用WSL，本身我们就装了Ubuntu，只要在WSL中安装Go，我们即可以直接用Vscode和Remote WSL插件直接编辑运行。</p><p>对的，还是有解决办法的。但是为什么我们迟迟不开始搞呢？</p><p>因为心烦，所以开了一篇新的笔记，来梳理一下思路。</p><h3 id="数模第二次模拟"><a class="markdownIt-Anchor" href="#数模第二次模拟"></a> 数模第二次模拟</h3><p>这次模拟我们选择了B题，这一题是我们之前有了解过。因为是去年的国赛题，所以网上也能找到相当多的讲解，，，为什么这点也让我觉得有点难推进呢。。</p><p>就是因为我觉得我们分工不足，缺乏有效沟通。</p><p>而且看多了获奖，就更感觉自己的现有实力很不够（对的，就是很不够。。。。。）谁懂？？当然，我<s>们</s>也没有很认真地学。正所谓一分耕耘一分收获，我们当前没什么收获也是因为我们没怎么耕耘。。</p><p>但是问题肯定是能解决的，这一点，我确实深信不疑。。</p><h3 id="毛概实践"><a class="markdownIt-Anchor" href="#毛概实践"></a> 毛概实践</h3><p>当前whr同学给出的他的那一部分我觉得有点差。因为去年那份思政实践是我自己搞得，所以我觉得他的排版一般，然后mh也没有给出足够多样的素材，问卷星明明可以有很多表现形式，他打可以直接把问卷星结果的网址发出来让我们自行选择素材。。。但是只甩了个word文档出来，很不好啊</p><p>我负责的线下采访部分我也还没开始。。。。很搞啊</p><h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2><p>总的来说现在的问题就这三个，这三个互相影响，互相牵扯，就这样让人感到难受。。。。</p><p>专注于解决一个问题就好了，朋友，别想太多了，真的。</p><p>想跑步今晚就可以去跑啊，反正最近的作息这么好，跑跑跑。</p><p><span class="emoji" alias="smile" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span><span class="emoji" alias="running" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png?v8">🏃</span><span class="emoji" alias="running_man" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3-2642.png?v8">🏃️‍♂</span><span class="emoji" alias="runner" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png?v8">🏃</span><span class="emoji" alias="sweat_drops" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a6.png?v8">💦</span></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="遇到的问题"><a class="markdownIt-Anchor" href="#遇到的问题"></a> 遇到的问题</h2><h3 id="环境问题"><a class="markdownIt-Anchor" href="#环境问题"></a> 环境问题</h3><p>当前遇到的问题还是Go环境没办法正常运行，也没找到问题根源所在。前几天用docker创建了一个容器来运行Go，又重新找到了那种学习的感觉。起码不用跟着敲一点代码，运行一下，等好几分钟才能看到结果。</p><p>昨天下午把基础又速通了一遍，今天早上看了一点数模的问题，下午又开始学Go。这次进入到项目实例，但是，问题就来了。容器中启动的server，没办法和主机的端口相连，并且docker容器创建好后没办法修改端口映射，意思是当前的这个容器没办法继续用了，无论如何。。。</p><p>很搞人心态啊。。。。。。。。。。。。。。但是又有一个新的解决方法，那就是在主机用WSL，本身我们就装了Ubuntu，只要在WSL中安装Go，我们即可以直接用Vscode和Remote WSL插件直接编辑运行。</p><p>对的，还是有解决办法的。但是为什么我们迟迟不开始搞呢？</p><p>因为心烦，所以开了一篇新的笔记，来梳理一下思路。</p><h3 id="第二次模拟"><a class="markdownIt-Anchor" href="#第二次模拟"></a> 第二次模拟</h3><p>这次模拟我们选择了B题，这一题是我们之前有了解过。因为是去年的国赛题，所以网上也能找到相当多的讲解，，，为什么这点也让我觉得有点难推进呢。。</p><p>就是因为我觉得我们分工不足，缺乏有效沟通。</p><p>而且看多了获奖，就更感觉自己的现有实力很不够（对的，就是很不够。。。。。）谁懂？？当然，我<s>们</s>也没有很认真地学。正所谓一分耕耘一分收获，我们当前没什么收获也是因为我们没怎么耕耘。。</p><p>但是问题肯定是能解决的，这一点，我确实深信不疑。。</p><h3 id="毛概实践"><a class="markdownIt-Anchor" href="#毛概实践"></a> 毛概实践</h3><p>当前whr同学给出的他的那一部分我觉得有点差。因为去年那份思政实践是我自己搞得，所以我觉得他的排版一般，然后mh也没有给出足够多样的素材，问卷星明明可以有很多表现形式，他打可以直接把问卷星结果的网址发出来让我们自行选择素材。。。但是只甩了个word文档出来，很不好啊</p><p>我负责的线下采访部分我也还没开始。。。。很搞啊</p><h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2><p>总的来说现在的问题就这三个，这三个互相影响，互相牵扯，就这样让人感到难受。。。。</p><p>专注于解决一个问题就好了，朋友，别想太多了，真的。</p><p>想跑步今晚就可以去跑啊，反正最近的作息这么好，跑跑跑。</p><p><span class="emoji" alias="smile" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span><span class="emoji" alias="running" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png?v8">🏃</span><span class="emoji" alias="running_man" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3-2642.png?v8">🏃️‍♂</span><span class="emoji" alias="runner" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png?v8">🏃</span><span class="emoji" alias="sweat_drops" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a6.png?v8">💦</span></p>]]></content>
     
     
     
